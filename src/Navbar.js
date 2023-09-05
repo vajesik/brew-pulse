@@ -1,20 +1,24 @@
-import Nav from "react-bootstrap/Nav";
+import React from "react";
 import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import { LinkContainer } from "react-router-bootstrap";
 
 function NavbarNav() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary d-flex">
-
       <Nav className="me-auto">
-        <Nav.Link href="#home" className="mr-3">
-          HOME
-        </Nav.Link>
-        <Nav.Link href="#link" className="mr-3">
-          ABOUT US
-        </Nav.Link>
-        <Nav.Link href="#link" className="mr-3">
-          FIND BREWERIES
-        </Nav.Link>
+        <LinkContainer to="/home">
+          <Nav.Link className="mr-3">HOME</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to="/about">
+          <Nav.Link className="mr-3">ABOUT US</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to="/featured_breweries">
+          <Nav.Link className="mr-3">OUR LOCAL BREWERIES</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to="/search">
+          <Nav.Link className="mr-3">FIND BREWERIES NEAR YOU</Nav.Link>
+        </LinkContainer>
       </Nav>
 
       <Navbar.Brand href="#home" className="ml-auto">

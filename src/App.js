@@ -1,9 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
+import BreweryList from "./BreweryList";
+import Navbar from "./Navbar";
 
 function App() {
   return (
     <div>
-      Hello World!
+      <Navbar />
+      <BreweryList />
     </div>
   );
 }

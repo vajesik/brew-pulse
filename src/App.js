@@ -1,4 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
+import BreweryList from "./BreweryList";
+import Navbar from "./Navbar";
 
 // Code used to fetch from API and populate db.json. - VJ
 // Once utilized, moved out of component to clean up.  We can delete if we don't need to use again. - VJ
@@ -57,7 +59,8 @@ import React, { useEffect } from "react";
 function App() {
   return (
     <div>
-      Hello World!
+      <Navbar />
+      <BreweryList />
     </div>
   );
 }

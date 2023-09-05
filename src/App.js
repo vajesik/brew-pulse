@@ -1,10 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Navbar from "./Navbar";
 import Home from "./Home.js";
 import About from "./About.js";
 import BreweryList from "./BreweryList";
 import Search from "./Search.js";
-import Navbar from "./Navbar";
 
 function App() {
   return (

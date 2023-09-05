@@ -6,6 +6,7 @@ function BreweryList() {
   useEffect(() => {
     async function fetchData() {
       try {
+
         const responsePortland = await fetch(
           "https://api.openbrewerydb.org/breweries?by_city=portland&by_state=oregon&per_page=5"
         );
@@ -15,7 +16,6 @@ function BreweryList() {
           "https://api.openbrewerydb.org/breweries?by_city=boulder&by_state=colorado&per_page=5"
         );
         const dataBoulder = await responseBoulder.json();
-
 
         const combinedData = [...dataPortland, ...dataBoulder];
 

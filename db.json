@@ -32,7 +32,8 @@
       "state": "Colorado",
       "zip": "80517",
       "phone": "9705912700",
-      "url": "https://avantgardealeworks.com"
+      "url": "https://avantgardealeworks.com",
+      "likes": 0
     },
     {
       "id": "b07c36e6-95d2-4fdc-981f-8266a0bc3786",
@@ -43,7 +44,8 @@
       "state": "Colorado",
       "zip": "80517",
       "phone": "9705865421",
-      "url": "http://www.epbrewery.net"
+      "url": "http://www.epbrewery.net",
+      "likes": 0
     },
     {
       "id": "90d7563e-7ff5-4fb4-aab3-19275c21bd9d",
@@ -54,7 +56,8 @@
       "state": "Colorado",
       "zip": "80517-7416",
       "phone": "9702351752",
-      "url": "http://www.lumpyridgebrewing.com"
+      "url": "http://www.lumpyridgebrewing.com",
+      "likes": 0
     },
     {
       "id": "6f35def1-f9b1-4712-9510-1c0b5b172b76",
@@ -78,7 +81,8 @@
       "state": "Colorado",
       "zip": "80524-9400",
       "phone": "9704904500",
-      "url": null
+      "url": null,
+      "likes": 0
     },
     {
       "id": "4e7d4dcd-13cd-4b18-acd3-7a690ba97aa0",
@@ -89,7 +93,8 @@
       "state": "Colorado",
       "zip": "80524-2555",
       "phone": "9709995658",
-      "url": "http://www.snowbank.beer"
+      "url": "http://www.snowbank.beer",
+      "likes": 0
     },
     {
       "id": "dff336da-9bbd-4e06-8ab9-405775650ed5",
@@ -100,7 +105,8 @@
       "state": "Colorado",
       "zip": "80524",
       "phone": null,
-      "url": "http://www.soulsquaredbrewing.com"
+      "url": "http://www.soulsquaredbrewing.com",
+      "likes": 0
     },
     {
       "id": "994b7ef7-6d89-4f01-ba5f-858c3bf76bcb",
@@ -111,7 +117,8 @@
       "state": "Colorado",
       "zip": "80521-3599",
       "phone": "9706821560",
-      "url": "http://www.threefourbeerco.com"
+      "url": "http://www.threefourbeerco.com",
+      "likes": 0
     },
     {
       "id": "a602e9ea-f0b3-4a40-8aa8-02e0aace191c",
@@ -122,7 +129,8 @@
       "state": "Colorado",
       "zip": "80525-3794",
       "phone": "9702232482",
-      "url": "http://www.zweibruderbrewing.com"
+      "url": "http://www.zweibruderbrewing.com",
+      "likes": 0
     },
     {
       "id": "2d1c4b89-4d44-4f47-8ea1-b11fdfc247bd",
@@ -133,7 +141,8 @@
       "state": "Colorado",
       "zip": "80525-1074",
       "phone": "9704932337",
-      "url": "http://www.blackbottlebrewery.com"
+      "url": "http://www.blackbottlebrewery.com",
+      "likes": 0
     },
     {
       "id": "781937cb-face-47db-a452-fc3997cca025",
@@ -144,7 +153,8 @@
       "state": "Colorado",
       "zip": "80524-2446",
       "phone": "9704980483",
-      "url": "http://www.coopersmithspub.com"
+      "url": "http://www.coopersmithspub.com",
+      "likes": 0
     },
     {
       "id": "30d25781-6bd5-4401-bf30-fbde7de4c15b",
@@ -155,7 +165,8 @@
       "state": "Colorado",
       "zip": "80525-2551",
       "phone": "9705688345",
-      "url": "http://jessupfarm.com/barrel-house/"
+      "url": "http://jessupfarm.com/barrel-house/",
+      "likes": 0
     },
     {
       "id": "16a73b0d-7b12-4ba3-b43c-8d8e8e34489a",
@@ -166,7 +177,8 @@
       "state": "Colorado",
       "zip": "80525-2575",
       "phone": "9702862855",
-      "url": "http://www.maxlinebrewing.com"
+      "url": "http://www.maxlinebrewing.com",
+      "likes": 0
     },
     {
       "id": "3b174e82-0a69-43c6-9b47-94cd039c59c3",
@@ -177,7 +189,8 @@
       "state": "Colorado",
       "zip": "80526-1486",
       "phone": "9706822041",
-      "url": "http://www.intersectbrewing.com"
+      "url": "http://www.intersectbrewing.com",
+      "likes": 0
     },
     {
       "id": "8938798a-3cd6-4864-96a9-e6febf1b25be",
@@ -188,7 +201,8 @@
       "state": "Colorado",
       "zip": "80521-4222",
       "phone": "9705688473",
-      "url": "http://www.mcclellansbrewingcompany.com"
+      "url": "http://www.mcclellansbrewingcompany.com",
+      "likes": 0
     },
     {
       "id": "1b0bf444-c830-4958-922c-5c1b46fe37f5",
@@ -199,7 +213,8 @@
       "state": "Colorado",
       "zip": "80524-2457",
       "phone": "9702210524",
-      "url": "http://www.newbelgium.com"
+      "url": "http://www.newbelgium.com",
+      "likes": 0
     },
     {
       "id": "63fd2c11-5530-4de9-8fe2-8fbf65e3a49f",
@@ -210,7 +225,8 @@
       "state": "Colorado",
       "zip": "80524-2507",
       "phone": "9704989070",
-      "url": "http://www.odellbrewing.com"
+      "url": "http://www.odellbrewing.com",
+      "likes": 0
     },
     {
       "id": "1d26e5a5-2e88-45d7-94ef-0e10c85cecde",
@@ -221,7 +237,8 @@
       "state": "Colorado",
       "zip": "80526-6008",
       "phone": "9704935374",
-      "url": "http://www.pitchersbrewery.com"
+      "url": "http://www.pitchersbrewery.com",
+      "likes": 0
     },
     {
       "id": "0676073b-a116-400c-a65a-7101daefc68b",
@@ -232,7 +249,8 @@
       "state": "Colorado",
       "zip": "80524-2162",
       "phone": "9704842421",
-      "url": null
+      "url": null,
+      "likes": 0
     },
     {
       "id": "fd475f2e-1e9e-4cd4-a9eb-e78f995a9300",
@@ -243,7 +261,8 @@
       "state": "Colorado",
       "zip": "80528",
       "phone": "3034061757",
-      "url": "http://www.dcoakesbrewhouse.com"
+      "url": "http://www.dcoakesbrewhouse.com",
+      "likes": 0
     },
     {
       "id": "b8e7517b-317b-4e4d-9d3d-4f7a35200908",
@@ -254,7 +273,8 @@
       "state": "Colorado",
       "zip": "80525-5953",
       "phone": "9703774107",
-      "url": "http://www.purposebrewing.com"
+      "url": "http://www.purposebrewing.com",
+      "likes": 0
     },
     {
       "id": "a3a2cc22-a18b-4cf9-86df-0ca06723116d",
@@ -265,7 +285,8 @@
       "state": "Colorado",
       "zip": "80524-2833",
       "phone": "9704841368",
-      "url": "http://www.equinoxbrewing.com"
+      "url": "http://www.equinoxbrewing.com",
+      "likes": 0
     },
     {
       "id": "5806ef06-a300-4a88-820e-f14e0c290794",
@@ -276,7 +297,8 @@
       "state": "Colorado",
       "zip": "80525-1188",
       "phone": "9705688936",
-      "url": "http://www.rallykingbrewing.com"
+      "url": "http://www.rallykingbrewing.com",
+      "likes": 0
     },
     {
       "id": "a2479685-7402-413d-8398-357db4a5aed8",
@@ -287,7 +309,8 @@
       "state": "Colorado",
       "zip": "80523-0001",
       "phone": "9704911055",
-      "url": null
+      "url": null,
+      "likes": 0
     },
     {
       "id": "1367028f-a358-4917-9c55-7ffb6fce1c4e",
@@ -298,7 +321,8 @@
       "state": "Colorado",
       "zip": "80524-2789",
       "phone": "9704823865",
-      "url": "http://www.funkwerks.com"
+      "url": "http://www.funkwerks.com",
+      "likes": 0
     },
     {
       "id": "78f72432-7c43-4f4b-9eb9-6abadb3e7a07",
@@ -309,7 +333,8 @@
       "state": "Colorado",
       "zip": "80524-2509",
       "phone": "6046824733",
-      "url": null
+      "url": null,
+      "likes": 0
     },
     {
       "id": "311072a3-c9ed-4df1-8efa-896888547e86",
@@ -320,7 +345,8 @@
       "state": "Colorado",
       "zip": "80525-2639",
       "phone": "9708257192",
-      "url": "http://www.gildedgoatbrewing.com"
+      "url": "http://www.gildedgoatbrewing.com",
+      "likes": 0
     },
     {
       "id": "b302bba4-5c90-4ab5-a9ae-f935ccd19059",
@@ -344,7 +370,8 @@
       "state": "Colorado",
       "zip": "80301-5306",
       "phone": "3035301381",
-      "url": "http://asherbrewing.com"
+      "url": "http://asherbrewing.com",
+      "likes": 0
     },
     {
       "id": "05b3f6bc-e7cf-40bb-8bdb-1dfc1a619c5f",
@@ -355,7 +382,8 @@
       "state": "Colorado",
       "zip": "80301-2860",
       "phone": null,
-      "url": "http://www.upslopebrewing.com"
+      "url": "http://www.upslopebrewing.com",
+      "likes": 0
     },
     {
       "id": "ece6204a-29eb-47e1-868d-55c2a78bc06c",
@@ -366,7 +394,8 @@
       "state": "Colorado",
       "zip": "80304-5602",
       "phone": "3033961898",
-      "url": "http://www.upslopebrewing.com"
+      "url": "http://www.upslopebrewing.com",
+      "likes": 0
     },
     {
       "id": "b8005ec5-1fc7-43bd-96e6-a5b185c927d8",
@@ -377,7 +406,8 @@
       "state": "Colorado",
       "zip": "80301-2301",
       "phone": "3038986802",
-      "url": "http://www.visionquestbrewing.com"
+      "url": "http://www.visionquestbrewing.com",
+      "likes": 0
     },
     {
       "id": "9ffda059-096e-4ae7-805b-49709737f941",
@@ -388,7 +418,8 @@
       "state": "Colorado",
       "zip": "80302-5103",
       "phone": "3034472739",
-      "url": "http://www.wfbrews.com"
+      "url": "http://www.wfbrews.com",
+      "likes": 0
     },
     {
       "id": "ed289ab7-9588-429f-bc3d-5977c5120d9f",
@@ -399,7 +430,8 @@
       "state": "Colorado",
       "zip": "80301-2724",
       "phone": "3034841465",
-      "url": "http://www.wildwoodsbrewery.com"
+      "url": "http://www.wildwoodsbrewery.com",
+      "likes": 0
     },
     {
       "id": "3bde4342-bfc1-49cb-9b40-7fb1aef26886",
@@ -410,7 +442,8 @@
       "state": "Colorado",
       "zip": "80301-3242",
       "phone": null,
-      "url": null
+      "url": null,
+      "likes": 0
     },
     {
       "id": "01e79aac-e955-4846-826e-1936e03bfd13",
@@ -421,7 +454,8 @@
       "state": "Colorado",
       "zip": "80301-3203",
       "phone": "7574072346",
-      "url": "http://www.btmbrewing.com"
+      "url": "http://www.btmbrewing.com",
+      "likes": 0
     },
     {
       "id": "57b4c49f-7c62-4f88-8027-deeb7aa29a99",
@@ -432,7 +466,8 @@
       "state": "Colorado",
       "zip": "80301-",
       "phone": "3034405200",
-      "url": "http://www.bjsrestaurants.com"
+      "url": "http://www.bjsrestaurants.com",
+      "likes": 0
     },
     {
       "id": "01a7842a-3139-475e-95e9-e5a671c236ef",
@@ -443,7 +478,8 @@
       "state": "Colorado",
       "zip": "80302",
       "phone": null,
-      "url": "http://www.blackcatbrewing.com"
+      "url": "http://www.blackcatbrewing.com",
+      "likes": 0
     },
     {
       "id": "9de1818b-9215-4043-a36b-d1dce42776ae",
@@ -454,7 +490,8 @@
       "state": "Colorado",
       "zip": "80301-5401",
       "phone": null,
-      "url": null
+      "url": null,
+      "likes": 0
     },
     {
       "id": "d3e1adcf-6b5c-4cbc-95e7-c980ccb79742",
@@ -465,7 +502,8 @@
       "state": "Colorado",
       "zip": "80302-5116",
       "phone": "3034471345",
-      "url": null
+      "url": null,
+      "likes": 0
     },
     {
       "id": "0afcc8c2-d95e-4ef3-9f55-009e01afeb4b",
@@ -476,7 +514,8 @@
       "state": "Nevada",
       "zip": "89005-2424",
       "phone": null,
-      "url": null
+      "url": null,
+      "likes": 0
     },
     {
       "id": "48a7cc57-7544-472d-bc89-2e12ab8e6d53",
@@ -487,7 +526,8 @@
       "state": "Colorado",
       "zip": "80303-1269",
       "phone": "7206385193",
-      "url": "http://www.bruboulder.com"
+      "url": "http://www.bruboulder.com",
+      "likes": 0
     },
     {
       "id": "c8914288-0a70-4f53-9c72-d65595b103f8",
@@ -498,7 +538,8 @@
       "state": "Colorado",
       "zip": "80302-9471",
       "phone": "2627198795",
-      "url": "http://www.cellarwest.com"
+      "url": "http://www.cellarwest.com",
+      "likes": 0
     },
     {
       "id": "82221e83-b64e-43c2-9593-0ec456674870",
@@ -509,7 +550,8 @@
       "state": "Colorado",
       "zip": "80301-2610",
       "phone": null,
-      "url": null
+      "url": null,
+      "likes": 0
     },
     {
       "id": "b7f0e370-efcc-4894-b0af-35e90917724f",
@@ -520,7 +562,8 @@
       "state": "Colorado",
       "zip": "80301-3364",
       "phone": null,
-      "url": "http://www.finkelandgarf.com"
+      "url": "http://www.finkelandgarf.com",
+      "likes": 0
     },
     {
       "id": "6872c14f-c3c4-49ea-a714-8c25b62163d4",
@@ -531,7 +574,8 @@
       "state": "Colorado",
       "zip": "80301-3761",
       "phone": "8008035732",
-      "url": "http://www.gunbarrelbrewing.com"
+      "url": "http://www.gunbarrelbrewing.com",
+      "likes": 0
     },
     {
       "id": "9ec5dc47-15d0-463a-90ba-40b06610a65f",
@@ -542,7 +586,8 @@
       "state": "Colorado",
       "zip": "80301-2335",
       "phone": "7196509697",
-      "url": "http://www.kettleandspoke.com"
+      "url": "http://www.kettleandspoke.com",
+      "likes": 0
     },
     {
       "id": "e5a383c9-cf8d-4115-b2ab-e59aa504624e",
@@ -553,7 +598,8 @@
       "state": "Colorado",
       "zip": "80302-5408",
       "phone": "3035460886",
-      "url": "http://www.mountainsunpub.com"
+      "url": "http://www.mountainsunpub.com",
+      "likes": 0
     },
     {
       "id": "d0ef1b88-ae8d-4d85-889c-16bf9f4fb58e",
@@ -564,7 +610,8 @@
       "state": "Colorado",
       "zip": "80304-1161",
       "phone": "3034994978",
-      "url": "http://www.newplanetbeer.com"
+      "url": "http://www.newplanetbeer.com",
+      "likes": 0
     },
     {
       "id": "59639100-39ec-491e-bbe4-680013452e0b",
@@ -575,7 +622,8 @@
       "state": "Colorado",
       "zip": "80301-2430",
       "phone": "2152667762",
-      "url": "http://www.sanitasbrewing.com/"
+      "url": "http://www.sanitasbrewing.com/",
+      "likes": 0
     },
     {
       "id": "7b6e3cce-d456-4ae4-9e09-8debafb72d3a",
@@ -586,7 +634,8 @@
       "state": "Colorado",
       "zip": "80305-5944",
       "phone": "3035430886",
-      "url": "http://www.mountainsunpub.com"
+      "url": "http://www.mountainsunpub.com",
+      "likes": 0
     },
     {
       "id": "7bfc0b84-5f81-4277-80ee-ea3633c6d1d4",
@@ -597,7 +646,8 @@
       "state": "Colorado",
       "zip": "80301-2455",
       "phone": "3033960384",
-      "url": "http://www.jwellsbrewery.com"
+      "url": "http://www.jwellsbrewery.com",
+      "likes": 0
     },
     {
       "id": "8d658be9-25c4-4c6c-8067-f2f48ca84796",
@@ -608,7 +658,8 @@
       "state": "Colorado",
       "zip": "80302-5201",
       "phone": "7203723341",
-      "url": "http://www.postbrewing.com"
+      "url": "http://www.postbrewing.com",
+      "likes": 0
     },
     {
       "id": "35d329e7-2608-44c0-b328-c3d54dd764cf",
@@ -619,7 +670,8 @@
       "state": "Colorado",
       "zip": "80301-2645",
       "phone": "3037869270",
-      "url": "http://www.twistedpinebrewing.com"
+      "url": "http://www.twistedpinebrewing.com",
+      "likes": 0
     },
     {
       "id": "00ea9c67-130c-4fa0-9b92-8cfb2b6ca81f",
@@ -630,7 +682,8 @@
       "state": "Colorado",
       "zip": "80301",
       "phone": null,
-      "url": "http://www.unnamedbeer.com"
+      "url": "http://www.unnamedbeer.com",
+      "likes": 0
     },
     {
       "id": "d6349994-f0fb-4b87-a49d-b1647f711e26",
@@ -641,7 +694,8 @@
       "state": "Colorado",
       "zip": "80301",
       "phone": "3033961898",
-      "url": null
+      "url": null,
+      "likes": 0
     }
   ]
 }

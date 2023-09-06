@@ -318,5 +318,13 @@
       "image": "",
       "likes": 0
     }
+  ],
+  "reviews": [
+    {
+      "name": "Rae",
+      "breweryId": "10",
+      "review": "This is some fine beer we have out here",
+      "id": 1
+    }
   ]
 }

@@ -1,0 +1,12 @@
+.review-card {
+  transition: none !important;
+}
+
+.review-card:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.review-card .button {
+  padding-top: 5px;
+}

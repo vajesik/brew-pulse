@@ -25,7 +25,7 @@
       "id": 4,
       "city": "Ouray",
       "state": "Colorado",
-      "description": "Ouray is an old mining town nestled in a tight amphitheater of steep cliff walls. It's neighbor, Ridgway, allows wide open views of the surrounding San Juan Mountains.",
+      "description": "Ouray is an old mining town nestled in a tight amphitheater of steep cliff walls. It's close neighbor, Ridgway, allows wide open views of the surrounding San Juan Mountains.",
       "image": "ouray.jpeg"
     }
   ],
@@ -43,7 +43,7 @@
       "latitude": "45.5259786",
       "phone": "5032241700",
       "url": "http://www.10barrel.com",
-      "image": "",
+      "image": "congrats.jpeg",
       "likes": 1
     },
     {
@@ -59,7 +59,7 @@
       "latitude": "45.4762536",
       "phone": "5032393831",
       "url": "http://www.13virtuesbrewing.com",
-      "image": "",
+      "image": "woodenflight.jpeg",
       "likes": 1
     },
     {
@@ -75,7 +75,7 @@
       "latitude": "45.48882655",
       "phone": "5034609025",
       "url": null,
-      "image": "",
+      "image": "fermenters.jpeg",
       "likes": 1
     },
     {
@@ -91,7 +91,7 @@
       "latitude": "45.54849565",
       "phone": "5034609025",
       "url": "http://www.alamedabrewing.com",
-      "image": "",
+      "image": "variety.jpeg",
       "likes": 1
     },
     {
@@ -107,7 +107,7 @@
       "latitude": "45.51786855",
       "phone": "5032234141",
       "url": "http://www.thearlingtonclub.com",
-      "image": "",
+      "image": "filling.jpeg",
       "likes": 1
     },
     {
@@ -123,7 +123,7 @@
       "latitude": "45.6177956",
       "phone": "3608593795",
       "url": "https://www.barlowsbrewery.com",
-      "image": "",
+      "image": "hops.jpeg",
       "likes": 1
     },
     {
@@ -139,7 +139,7 @@
       "latitude": "45.62576802",
       "phone": "3606065806",
       "url": "http://www.beerdedbrothers.net",
-      "image": "",
+      "image": "tanks.jpeg",
       "likes": 1
     },
     {
@@ -155,7 +155,7 @@
       "latitude": "45.70699686",
       "phone": "3606073275",
       "url": "http://www.brotherassbrewing.com",
-      "image": "",
+      "image": "pour.jpeg",
       "likes": 1
     },
     {
@@ -171,7 +171,7 @@
       "latitude": "45.6499058",
       "phone": "3607188927",
       "url": "http://www.brotherscascadiabrewing.com",
-      "image": "",
+      "image": "closeflight.jpeg",
       "likes": 1
     },
     {
@@ -187,7 +187,7 @@
       "latitude": "45.68816081",
       "phone": "3605598241",
       "url": "http://www.doomsdaybrewing.com",
-      "image": "",
+      "image": "artsyflight.jpeg",
       "likes": 1
     },
     {
@@ -203,7 +203,7 @@
       "latitude": "40.3728533",
       "phone": "9705912700",
       "url": "https://avantgardealeworks.com",
-      "image": "",
+      "image": "tablecheers.jpeg",
       "likes": 0
     },
     {
@@ -219,7 +219,7 @@
       "latitude": "40.3714876",
       "phone": "9705865421",
       "url": "http://www.epbrewery.net",
-      "image": "",
+      "image": "taps.jpeg",
       "likes": 0
     },
     {
@@ -235,7 +235,7 @@
       "latitude": "40.367158",
       "phone": "9702351752",
       "url": "http://www.lumpyridgebrewing.com",
-      "image": "",
+      "image": "taster.jpeg",
       "likes": 0
     },
     {
@@ -251,7 +251,7 @@
       "latitude": "40.37237825",
       "phone": "9705867300",
       "url": "http://www.rockcutbrewing.com",
-      "image": "",
+      "image": "flight.jpeg",
       "likes": 0
     },
     {
@@ -267,7 +267,7 @@
       "latitude": "38.0229071",
       "phone": "9703257388",
       "url": "http://www.ouraybrewery.com",
-      "image": "",
+      "image": "closepour.jpeg",
       "likes": 0
     },
     {
@@ -283,7 +283,7 @@
       "latitude": "38.02402041",
       "phone": "9709031824",
       "url": null,
-      "image": "",
+      "image": "cheers.jpeg",
       "likes": 0
     },
     {
@@ -299,7 +299,7 @@
       "latitude": "38.020713",
       "phone": "9703259858",
       "url": "http://www.redmountainbrewingouray.com",
-      "image": "",
+      "image": "grains.jpeg",
       "likes": 0
     },
     {
@@ -315,7 +315,7 @@
       "latitude": "38.152358",
       "phone": "9706265333",
       "url": "http://www.coloradoboy.com",
-      "image": "",
+      "image": "blur.jpeg",
       "likes": 0
     }
   ],

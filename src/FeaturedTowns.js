@@ -20,7 +20,6 @@ const townImages = importAll(
 function FeaturedTowns() {
   const [featuredTowns, setFeaturedTowns] = useState([]);
   const navigate = useNavigate();
-  console.log(featuredTowns);
 
   useEffect(() => {
     fetch("http://localhost:3000/featuredTowns")

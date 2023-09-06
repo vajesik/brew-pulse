@@ -20,7 +20,6 @@ const brewImages = importAll(
 function BreweryList() {
   const [breweries, setBreweries] = useState([]);
   const { city } = useParams();
-  console.log(city);
 
   useEffect(() => {
     fetch("http://localhost:3000/breweries")
@@ -46,7 +45,11 @@ function BreweryList() {
             <Card.Text>
               {brewery.city}, {brewery.state} {brewery.zip}
             </Card.Text>
-            <Button variant="primary">Website</Button>
+            {brewery.url ? (
+              <Button href={brewery.url} variant="primary">
+                Website
+              </Button>
+            ) : null}
           </Card.Body>
         </Card>
       ))}

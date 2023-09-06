@@ -41,7 +41,16 @@ function TownList() {
       <h1>Our featured stomping grounds!</h1>
       {/* {featuredTowns.map(town => {
         return (
-          <Card style={{ width: "18rem" }}>
+          <Card
+          key={town.id}
+          style={{
+            width: "30rem",
+            marginTop: "2em",
+            padding: "2em 1em 1em",
+            borderRadius: "2em",
+            textAlign: "center",
+            boxShadow: "0 5px 10px rgba(0, 0, 0, 0.2)",
+          }}>
             <Card.Img variant="top" src={town.image} />
             <Card.Body>
               <Card.Title>
@@ -53,7 +62,16 @@ function TownList() {
           </Card>
         );
       })} */}
-      <Card style={{ width: "18rem" }}>
+      <Card
+        style={{
+          width: "30rem",
+          marginTop: "2em",
+          padding: "2em 1em 1em",
+          borderRadius: "2em",
+          textAlign: "center",
+          boxShadow: "0 5px 10px rgba(0, 0, 0, 0.2)",
+        }}
+      >
         <Card.Img variant="top" src={townImages["portland.jpeg"]} />
         <Card.Body>
           <Card.Title>Portland, Oregon</Card.Title>
@@ -64,7 +82,16 @@ function TownList() {
           <Button variant="primary">Explore local breweries</Button>
         </Card.Body>
       </Card>
-      <Card style={{ width: "18rem" }}>
+      <Card
+        style={{
+          width: "30rem",
+          marginTop: "2em",
+          padding: "2em 1em 1em",
+          borderRadius: "2em",
+          textAlign: "center",
+          boxShadow: "0 5px 10px rgba(0, 0, 0, 0.2)",
+        }}
+      >
         <Card.Img variant="top" src={townImages["vancouver.jpeg"]} />
         <Card.Body>
           <Card.Title>Vancouver, Washington</Card.Title>
@@ -75,7 +102,16 @@ function TownList() {
           <Button variant="primary">Explore local breweries</Button>
         </Card.Body>
       </Card>
-      <Card style={{ width: "18rem" }}>
+      <Card
+        style={{
+          width: "30rem",
+          marginTop: "2em",
+          padding: "2em 1em 1em",
+          borderRadius: "2em",
+          textAlign: "center",
+          boxShadow: "0 5px 10px rgba(0, 0, 0, 0.2)",
+        }}
+      >
         <Card.Img variant="top" src={townImages["estes.jpeg"]} />
         <Card.Body>
           <Card.Title>Estes Park, Colorado</Card.Title>
@@ -87,7 +123,16 @@ function TownList() {
           <Button variant="primary">Explore local breweries</Button>
         </Card.Body>
       </Card>
-      <Card style={{ width: "18rem" }}>
+      <Card
+        style={{
+          width: "30rem",
+          marginTop: "2em",
+          padding: "2em 1em 1em",
+          borderRadius: "2em",
+          textAlign: "center",
+          boxShadow: "0 5px 10px rgba(0, 0, 0, 0.2)",
+        }}
+      >
         <Card.Img variant="top" src={townImages["ouray.jpeg"]} />
         <Card.Body>
           <Card.Title>Ouray/Ridgway, Colorado</Card.Title>

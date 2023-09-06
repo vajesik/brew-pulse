@@ -6,6 +6,7 @@ import About from "./About.js";
 import FeaturedTowns from "./FeaturedTowns.js";
 import BreweryList from "./BreweryList.js";
 import Search from "./Search.js";
+import Review from "./Review.js";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/featured_towns" element={<FeaturedTowns />} />
         <Route path="/featured_towns/:city" element={<BreweryList />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/review" element={<Review />} />
       </Routes>
     </div>
   );

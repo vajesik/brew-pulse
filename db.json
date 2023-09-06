@@ -80,7 +80,7 @@
     },
     {
       "id": 4,
-      "name": "Alameda Brewing Co",
+      "name": "Alameda Brewing Co Fremont",
       "type": "micro",
       "address": "4765 NE Fremont St",
       "city": "Portland",
@@ -317,6 +317,14 @@
       "url": "http://www.coloradoboy.com",
       "image": "",
       "likes": 0
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Rae",
+      "breweryId": "10",
+      "review": "This is some fine beer we have out here",
+      "id": 1
     }
   ]
 }

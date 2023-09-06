@@ -3,7 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import Home from "./Home.js";
 import About from "./About.js";
-import TownList from "./TownList";
+import FeaturedTowns from "./FeaturedTowns.js";
+import BreweryList from "./BreweryList.js";
 import Search from "./Search.js";
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/featured_breweries" element={<TownList />} />
+        <Route path="/featured_towns" element={<FeaturedTowns />} />
+        <Route path="/featured_towns/:city" element={<BreweryList />} />
         <Route path="/search" element={<Search />} />
       </Routes>
     </div>

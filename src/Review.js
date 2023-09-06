@@ -99,7 +99,7 @@ function Review() {
       <Row className="justify-content-md-center" style={{ paddingTop: "10px" }}>
         <Col md={6}>
           <Card className="review-card">
-            <Card.Header>Submit a Review</Card.Header>
+            <Card.Header className="review-card-header">Submit a Review</Card.Header>
             <Card.Body>
               {showAlert && (
                 <Alert variant="success">Review saved successfully!</Alert>

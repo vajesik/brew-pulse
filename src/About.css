@@ -1,0 +1,50 @@
+.card img {
+  width: 80%;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card .card-title {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.card .btn {
+  border-radius: 2em;
+  background-color: #602320 !important;
+  color: #ffffff;
+  padding: 0.5em 1.5em;
+  transform: scale(1);
+}
+
+.card .btn:hover {
+  background-color: #a32020 !important;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+}
+
+.card {
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+
+.card:hover {
+  /* Scale the card up by 5% when hovered */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+  transform: scale(1.05);
+}
+
+.github {
+    margin-right: 5px;
+}
+
+
+
+/* body .background {
+    background-image: url('./bg.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */

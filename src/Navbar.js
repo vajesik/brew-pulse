@@ -1,6 +1,7 @@
 import React from "react";
-import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import { LinkContainer } from "react-router-bootstrap";
 
 function NavbarNav() {
@@ -13,9 +14,27 @@ function NavbarNav() {
         <LinkContainer to="/about">
           <Nav.Link className="mr-3">ABOUT US</Nav.Link>
         </LinkContainer>
-        <LinkContainer to="/featured_breweries">
-          <Nav.Link className="mr-3">FEATURED BREWERIES</Nav.Link>
-        </LinkContainer>
+        <NavDropdown
+          title="FEATURED BREWERIES"
+          href="/featured_breweries"
+          className="mr-3"
+        >
+          <LinkContainer to="/featured_towns">
+            <NavDropdown.Item>FEATURED TOWNS</NavDropdown.Item>
+          </LinkContainer>
+          <LinkContainer to="/featured_towns/Portland">
+            <NavDropdown.Item>PORTLAND, OR</NavDropdown.Item>
+          </LinkContainer>
+          <LinkContainer to="/featured_towns/Vancouver">
+            <NavDropdown.Item>VANCOUVER, WA</NavDropdown.Item>
+          </LinkContainer>
+          <LinkContainer to="/featured_towns/Estes Park">
+            <NavDropdown.Item>ESTES PARK, CO</NavDropdown.Item>
+          </LinkContainer>
+          <LinkContainer to="/featured_towns/Ouray">
+            <NavDropdown.Item>OURAY/RIDGWAY, CO</NavDropdown.Item>
+          </LinkContainer>
+        </NavDropdown>
         <LinkContainer to="/search">
           <Nav.Link className="mr-3">FIND BREWERIES NEAR YOU</Nav.Link>
         </LinkContainer>

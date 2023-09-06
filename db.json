@@ -1,4 +1,34 @@
 {
+  "featuredTowns": [
+    {
+      "id": 1,
+      "city": "Portland",
+      "state": "Oregon",
+      "description": "",
+      "image": "./src/images-towns/portland.jpeg"
+    },
+    {
+      "id": 2,
+      "city": "Vancouver",
+      "state": "Washington",
+      "description": "",
+      "image": ".src/images-towns/vancouver.jpeg"
+    },
+    {
+      "id": 3,
+      "city": "Estes Park",
+      "state": "Colorado",
+      "description": "Gateway town to Rocky Mountain National Park, sitting at about 7,500 feet above sea level, offers stunning views of the Continental Divide.",
+      "image": "./src/images-towns/estes.jpeg"
+    },
+    {
+      "id": 4,
+      "city": "Ouray/Ridgway",
+      "state": "Colorado",
+      "description": "Ouray is an old mining town nestled in a tight amphitheater of steep cliff walls. It's neighbor, Ridgway, allows wide open views of the surrounding San Juan Mountains.",
+      "image": "./src/images-towns/ouray.jpeg"
+    }
+  ],
   "breweries": [
     {
       "id": 1,

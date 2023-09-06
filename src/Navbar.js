@@ -7,14 +7,14 @@ function NavbarNav() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary d-flex">
       <Nav className="me-auto">
-        <LinkContainer to="/home">
+        <LinkContainer to="/">
           <Nav.Link className="mr-3">HOME</Nav.Link>
         </LinkContainer>
         <LinkContainer to="/about">
           <Nav.Link className="mr-3">ABOUT US</Nav.Link>
         </LinkContainer>
         <LinkContainer to="/featured_breweries">
-          <Nav.Link className="mr-3">OUR LOCAL BREWERIES</Nav.Link>
+          <Nav.Link className="mr-3">FEATURED BREWERIES</Nav.Link>
         </LinkContainer>
         <LinkContainer to="/search">
           <Nav.Link className="mr-3">FIND BREWERIES NEAR YOU</Nav.Link>

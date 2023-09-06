@@ -1,0 +1,14 @@
+card .btn {
+  border-radius: 2em;
+  background-color: #602320 !important;
+  color: #ffffff;
+  padding: 0.5em 1.5em;
+  transform: scale(1);
+}
+
+.card .btn:hover {
+  background-color: #a32020 !important;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+}

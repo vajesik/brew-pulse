@@ -49,9 +49,15 @@ function Search() {
       <div id="form-div">
         <div className="search-header">
           <h2>
-            <img src={iconImage["cheers_icon.jpeg"]} />
+            <img
+              src={iconImage["cheers_icon.jpeg"]}
+              alt="Graphic of two beer mugs clinking together"
+            />
             SEARCH FOR BREWERIES:
-            <img src={iconImage["cheers_icon.jpeg"]} />
+            <img
+              src={iconImage["cheers_icon.jpeg"]}
+              alt="Graphic of two beer mugs clinking together"
+            />
           </h2>
         </div>
         <Form onSubmit={handleFormSubmit}>

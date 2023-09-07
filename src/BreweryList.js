@@ -54,7 +54,11 @@ function BreweryList() {
     <div className="brew-cards">
       {breweriesToDisplay.map(brewery => (
         <Card className="card-item" key={brewery.id}>
-          <Card.Img variant="top" src={brewImages[brewery.image]} />
+          <Card.Img
+            variant="top"
+            src={brewImages[brewery.image]}
+            alt="Stock brewery image"
+          />
           <Card.Body>
             <Card.Title>{brewery.name}</Card.Title>
             <Card.Text>Type: {brewery.type}</Card.Text>

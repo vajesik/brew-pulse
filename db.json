@@ -4,14 +4,14 @@
       "id": 1,
       "city": "Portland",
       "state": "Oregon",
-      "description": "",
+      "description": "Portland is a magical, weird city filled to the brim with incredible food, arts, and drink. We also have Gregory Gourdet, so that's cool. Incredible hiking is abundant here.",
       "image": "portland.jpeg"
     },
     {
       "id": 2,
       "city": "Vancouver",
       "state": "Washington",
-      "description": "",
+      "description": "Vancouver is a small, but ever growing city just on the other side of the Columbia River. It's Portland's state tax free cousin. The bustling downtown core has gorgeous Esther Short Park and tons of fun eateries and views.",
       "image": "vancouver.jpeg"
     },
     {

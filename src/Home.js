@@ -1,4 +1,6 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 //Image imports
 function importAll(r) {
@@ -17,7 +19,7 @@ const headerImage = importAll(
 function Home() {
   return (
     <>
-      <h1
+      {/* <h1
         style={{
           textAlign: "center",
           color: "#dc6900",
@@ -31,17 +33,39 @@ function Home() {
         }}
       >
         BREW PULSE
-      </h1>
-      <img
+      </h1> */}
+      <div
+        className="logo"
         style={{
-          display: "block",
-          marginLeft: "auto",
-          marginRight: "auto",
-          width: "45%",
+          border: "solid 1px",
+          borderRadius: "15px",
+          boxShadow: "4px 8px 10px rgba(0, 0, 0, 0.1)",
+          color: "#dc6900",
+          margin: "auto",
+          width: "800px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          marginTop: "5%",
         }}
-        src={headerImage["header.jpeg"]}
-        alt="Graphic of a line of brews in a variety of glasses all with a nice head of foam"
-      />
+      >
+        <img
+          style={{
+            display: "block",
+            marginLeft: "auto",
+            marginRight: "auto",
+            // width: "45%",
+          }}
+          src={headerImage["brewpulselog.png"]}
+          alt="Graphic of a line of brews in a variety of glasses all with a nice head of foam"
+        />
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <Link to="/featured_towns">
+            <Button>Check it Out</Button>
+          </Link>
+        </div>
+      </div>
     </>
   );
 }

@@ -4,14 +4,14 @@
       "id": 1,
       "city": "Portland",
       "state": "Oregon",
-      "description": "",
+      "description": "Portland is a magical, weird city filled to the brim with incredible food, arts, and drink. We also have Gregory Gourdet, so that's cool. Incredible hiking is abundant here.",
       "image": "portland.jpeg"
     },
     {
       "id": 2,
       "city": "Vancouver",
       "state": "Washington",
-      "description": "",
+      "description": "Vancouver is a small, but ever growing city just on the other side of the Columbia River. It's Portland's state tax free cousin. The bustling downtown core has gorgeous Esther Short Park and tons of fun eateries and views.",
       "image": "vancouver.jpeg"
     },
     {
@@ -37,14 +37,14 @@
       "address": "1411 NW Flanders St",
       "city": "Portland",
       "state": "Oregon",
-      "zip": "97209-2620",
+      "zip": "97209",
       "country": "United States",
       "longitude": "-122.6855056",
       "latitude": "45.5259786",
       "phone": "5032241700",
       "url": "http://www.10barrel.com",
       "image": "congrats.jpeg",
-      "likes": 1
+      "likes": 4
     },
     {
       "id": 2,
@@ -53,7 +53,7 @@
       "address": "6410 SE Milwaukie Ave",
       "city": "Portland",
       "state": "Oregon",
-      "zip": "97202-5518",
+      "zip": "97202",
       "country": "United States",
       "longitude": "-122.6487531",
       "latitude": "45.4762536",
@@ -69,14 +69,14 @@
       "address": "4736 SE 24th Ave",
       "city": "Portland",
       "state": "Oregon",
-      "zip": "97202-4787",
+      "zip": "97202",
       "country": "United States",
       "longitude": "-122.6412495",
       "latitude": "45.48882655",
       "phone": "5034609025",
       "url": null,
       "image": "fermenters.jpeg",
-      "likes": 1
+      "likes": 2
     },
     {
       "id": 4,
@@ -85,7 +85,7 @@
       "address": "4765 NE Fremont St",
       "city": "Portland",
       "state": "Oregon",
-      "zip": "97213-1724",
+      "zip": "97213",
       "country": "United States",
       "longitude": "-122.6136209",
       "latitude": "45.54849565",
@@ -101,14 +101,14 @@
       "address": "811 SW Salmon St",
       "city": "Portland",
       "state": "Oregon",
-      "zip": "97205-3094",
+      "zip": "97205",
       "country": "United States",
       "longitude": "-122.6818596",
       "latitude": "45.51786855",
       "phone": "5032234141",
       "url": "http://www.thearlingtonclub.com",
-      "image": "filling.jpeg",
-      "likes": 1
+      "image": "grains.jpeg",
+      "likes": 3
     },
     {
       "id": 6,
@@ -124,7 +124,7 @@
       "phone": "3608593795",
       "url": "https://www.barlowsbrewery.com",
       "image": "hops.jpeg",
-      "likes": 1
+      "likes": 5
     },
     {
       "id": 7,
@@ -140,7 +140,7 @@
       "phone": "3606065806",
       "url": "http://www.beerdedbrothers.net",
       "image": "tanks.jpeg",
-      "likes": 1
+      "likes": 2
     },
     {
       "id": 8,
@@ -149,14 +149,14 @@
       "address": "11700 NE 54th Ct",
       "city": "Vancouver",
       "state": "Washington",
-      "zip": "98686-4589",
+      "zip": "98686",
       "country": "United States",
       "longitude": "-122.6170235",
       "latitude": "45.70699686",
       "phone": "3606073275",
       "url": "http://www.brotherassbrewing.com",
       "image": "pour.jpeg",
-      "likes": 1
+      "likes": 2
     },
     {
       "id": 9,
@@ -165,14 +165,14 @@
       "address": "9811 NE 15th Ave",
       "city": "Vancouver",
       "state": "Washington",
-      "zip": "98665-9102",
+      "zip": "98665",
       "country": "United States",
       "longitude": "-122.6553318",
       "latitude": "45.6499058",
       "phone": "3607188927",
       "url": "http://www.brotherscascadiabrewing.com",
       "image": "closeflight.jpeg",
-      "likes": 1
+      "likes": 10
     },
     {
       "id": 10,
@@ -181,14 +181,14 @@
       "address": "9301 NE 5th Ave Ste 120",
       "city": "Vancouver",
       "state": "Washington",
-      "zip": "98665-8271",
+      "zip": "98665",
       "country": "United States",
       "longitude": "-122.6666369",
       "latitude": "45.68816081",
       "phone": "3605598241",
       "url": "http://www.doomsdaybrewing.com",
       "image": "artsyflight.jpeg",
-      "likes": 1
+      "likes": 3
     },
     {
       "id": 11,
@@ -229,7 +229,7 @@
       "address": "531 S St Vrain Ave",
       "city": "Estes Park",
       "state": "Colorado",
-      "zip": "80517-7416",
+      "zip": "80517",
       "country": "United States",
       "longitude": "-105.503658",
       "latitude": "40.367158",
@@ -261,7 +261,7 @@
       "address": "607 Main St",
       "city": "Ouray",
       "state": "Colorado",
-      "zip": "81427-",
+      "zip": "81427",
       "country": "United States",
       "longitude": "-107.6712878",
       "latitude": "38.0229071",
@@ -277,7 +277,7 @@
       "address": "703 Main St",
       "city": "Ouray",
       "state": "Colorado",
-      "zip": "81427-0630",
+      "zip": "81427",
       "country": "United States",
       "longitude": "-107.6714048",
       "latitude": "38.02402041",

@@ -41,7 +41,11 @@ function FeaturedTowns() {
             boxShadow: "0 5px 10px rgba(0, 0, 0, 0.2)",
           }}
         >
-          <Card.Img variant="top" src={townImages[town.image]} />
+          <Card.Img
+            variant="top"
+            src={townImages[town.image]}
+            alt={(town.city, town.state)}
+          />
           <Card.Body>
             <Card.Title>
               {town.city}, {town.state}

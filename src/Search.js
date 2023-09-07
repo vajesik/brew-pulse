@@ -2,6 +2,20 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Accordion from "react-bootstrap/Accordion";
+import "./Search.css";
+
+//Icon image import
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => {
+    images[item.replace("./", "")] = r(item);
+  });
+  return images;
+}
+//Town images
+const iconImage = importAll(
+  require.context("./icons-brews", false, /\.(png|jpe?g|svg)$/)
+);
 
 function Search() {
   const [formData, setFormData] = useState({
@@ -32,39 +46,53 @@ function Search() {
 
   return (
     <div>
-      <h1>Search for breweries near you</h1>
-      <Form onSubmit={handleFormSubmit}>
-        <Form.Label>City</Form.Label>
-        <Form.Control
-          type="text"
-          name="city"
-          value={city}
-          onChange={handleChange}
-          placeholder="Enter City"
-        />
-        <Form.Label>State</Form.Label>
-        <Form.Control
-          type="text"
-          name="state"
-          value={state}
-          onChange={handleChange}
-          placeholder="Enter State"
-        />
-        <Form.Label>ZIP Code</Form.Label>
-        <Form.Control
-          type="number"
-          name="zip"
-          value={zip}
-          onChange={handleChange}
-          placeholder="Enter 5 digit ZIP Code"
-        />
-        <Button type="submit">Search</Button>
-      </Form>
-      <div>
-        {breweries
-          ? breweries.map((brewery, index) => (
-              <Accordion key={brewery.id}>
-                <Accordion.Item eventKey={index.toString()}>
+      <div id="form-div">
+        <div className="search-header">
+          <h2>
+            <img src={iconImage["cheers_icon.jpeg"]} />
+            SEARCH FOR BREWERIES:
+            <img src={iconImage["cheers_icon.jpeg"]} />
+          </h2>
+        </div>
+        <Form onSubmit={handleFormSubmit}>
+          <Form.Group>
+            <Form.Label>City</Form.Label>
+            <Form.Control
+              type="text"
+              name="city"
+              value={city}
+              onChange={handleChange}
+              placeholder="Enter City"
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label>State</Form.Label>
+            <Form.Control
+              type="text"
+              name="state"
+              value={state}
+              onChange={handleChange}
+              placeholder="Enter State"
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label>ZIP Code</Form.Label>
+            <Form.Control
+              type="number"
+              name="zip"
+              value={zip}
+              onChange={handleChange}
+              placeholder="Enter 5 digit ZIP Code"
+            />
+          </Form.Group>
+          <Button type="submit">Search</Button>
+        </Form>
+      </div>
+      <div id="accordion-div">
+        <Accordion>
+          {breweries
+            ? breweries.map((brewery, index) => (
+                <Accordion.Item key={brewery.id} eventKey={index.toString()}>
                   <Accordion.Header>
                     {brewery.name} <br />
                     Type: {brewery.brewery_type}
@@ -74,13 +102,13 @@ function Search() {
                     {brewery.postal_code}
                     <br />
                     {brewery.website_url ? (
-                      <Button href={brewery.url}>Website</Button>
+                      <Button href={brewery.website_url}>Website</Button>
                     ) : null}
                   </Accordion.Body>
                 </Accordion.Item>
-              </Accordion>
-            ))
-          : null}
+              ))
+            : null}
+        </Accordion>
       </div>
     </div>
   );

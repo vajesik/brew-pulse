@@ -26,18 +26,14 @@ function BreweryList() {
 
   useEffect(() => {
     fetch("http://localhost:3000/breweries")
-      .then((r) => r.json())
-      .then((breweries) => setBreweries(breweries));
+      .then(r => r.json())
+      .then(breweries => setBreweries(breweries));
   }, []);
 
-  const breweriesToDisplay = breweries.filter((brewery) => {
-    if (city === brewery.city) {
-      return true;
-    }
-  });
+  const breweriesToDisplay = breweries.filter(brewery => city === brewery.city);
 
   function handleLike(breweryId) {
-    const updatedBreweries = breweries.map((brew) => {
+    const updatedBreweries = breweries.map(brew => {
       if (brew.id === breweryId) {
         return { ...brew, likes: brew.likes + 1 };
       }
@@ -49,19 +45,19 @@ function BreweryList() {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        likes: updatedBreweries.find((b) => b.id === breweryId).likes,
+        likes: updatedBreweries.find(b => b.id === breweryId).likes,
       }),
     });
   }
 
   return (
     <div className="brew-cards">
-      {breweriesToDisplay.map((brewery) => (
+      {breweriesToDisplay.map(brewery => (
         <Card className="card-item" key={brewery.id}>
           <Card.Img variant="top" src={brewImages[brewery.image]} />
           <Card.Body>
             <Card.Title>{brewery.name}</Card.Title>
-            <Card.Text>Brewery Type: {brewery.type}</Card.Text>
+            <Card.Text>Type: {brewery.type}</Card.Text>
             <Card.Text>{brewery.address}</Card.Text>
             <Card.Text>
               {brewery.city}, {brewery.state} {brewery.zip}

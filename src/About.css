@@ -13,6 +13,7 @@
 .card .btn {
   border-radius: 2em;
   background-color: #602320 !important;
+  border-color: black !important;
   color: #ffffff;
   padding: 0.5em 1.5em;
   transform: scale(1);
@@ -37,10 +38,8 @@
 }
 
 .github {
-    margin-right: 5px;
+  margin-right: 5px;
 }
-
-
 
 /* body .background {
     background-image: url('./bg.png');

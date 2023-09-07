@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./BreweryList.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBeerMugEmpty } from "@fortawesome/free-solid-svg-icons";
+import { faBeerMugEmpty, faLink } from "@fortawesome/free-solid-svg-icons";
 
 //Image imports
 function importAll(r) {
@@ -26,14 +26,16 @@ function BreweryList() {
 
   useEffect(() => {
     fetch("http://localhost:3000/breweries")
-      .then(r => r.json())
-      .then(breweries => setBreweries(breweries));
+      .then((r) => r.json())
+      .then((breweries) => setBreweries(breweries));
   }, []);
 
-  const breweriesToDisplay = breweries.filter(brewery => city === brewery.city);
+  const breweriesToDisplay = breweries.filter(
+    (brewery) => city === brewery.city
+  );
 
   function handleLike(breweryId) {
-    const updatedBreweries = breweries.map(brew => {
+    const updatedBreweries = breweries.map((brew) => {
       if (brew.id === breweryId) {
         return { ...brew, likes: brew.likes + 1 };
       }
@@ -45,20 +47,23 @@ function BreweryList() {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        likes: updatedBreweries.find(b => b.id === breweryId).likes,
+        likes: updatedBreweries.find((b) => b.id === breweryId).likes,
       }),
     });
   }
 
   return (
     <div className="brew-cards">
-      {breweriesToDisplay.map(brewery => (
+      {breweriesToDisplay.map((brewery) => (
         <Card className="card-item" key={brewery.id}>
           <Card.Img
             variant="top"
             src={brewImages[brewery.image]}
             alt="Stock brewery image"
           />
+          <Button onClick={() => handleLike(brewery.id)}>
+            Likes: {brewery.likes} <FontAwesomeIcon icon={faBeerMugEmpty} />
+          </Button>
           <Card.Body>
             <Card.Title>{brewery.name}</Card.Title>
             <Card.Text>Type: {brewery.type}</Card.Text>
@@ -66,11 +71,13 @@ function BreweryList() {
             <Card.Text>
               {brewery.city}, {brewery.state} {brewery.zip}
             </Card.Text>
-            {brewery.url ? <Button href={brewery.url}>Website</Button> : null}
-
-            <Button onClick={() => handleLike(brewery.id)}>
-              {brewery.likes} <FontAwesomeIcon icon={faBeerMugEmpty} />
-            </Button>
+            <br />
+            <br />
+            {brewery.url ? (
+              <Button href={brewery.url} className="website-button">
+                <FontAwesomeIcon icon={faLink} />
+              </Button>
+            ) : null}
           </Card.Body>
         </Card>
       ))}

@@ -7,9 +7,14 @@
 }
 
 .town-header img {
-  width: 225px !important;
-  height: 200px !important;
+  width: 100px !important;
+  height: 100px !important;
   padding: 3px 3px;
+}
+
+.town-div img {
+  max-height: 300px;
+  max-width: 400px;
 }
 
 .town-div {
@@ -19,4 +24,5 @@
   align-content: center;
   row-gap: 25px;
   column-gap: 200px;
+  margin-bottom: 10%;
 }

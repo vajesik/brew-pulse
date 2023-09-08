@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { LinkContainer } from "react-router-bootstrap";
+import "./Navbar.css";
 
 function NavbarNav() {
   return (
@@ -22,6 +23,7 @@ function NavbarNav() {
           <LinkContainer to="/featured_towns">
             <NavDropdown.Item>FEATURED TOWNS</NavDropdown.Item>
           </LinkContainer>
+          <NavDropdown.Divider />
           <LinkContainer to="/featured_towns/Portland">
             <NavDropdown.Item>PORTLAND, OR</NavDropdown.Item>
           </LinkContainer>

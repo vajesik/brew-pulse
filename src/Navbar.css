@@ -1,0 +1,9 @@
+/* When you click: */
+.dropdown-item:active {
+  --bs-dropdown-link-active-bg: #dc6900 !important;
+}
+
+/* Viewing while active: */
+.dropdown-item.active {
+  --bs-dropdown-link-active-bg: #eb8c00 !important;
+}

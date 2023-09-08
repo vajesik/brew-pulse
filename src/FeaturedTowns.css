@@ -1,0 +1,20 @@
+.town-header {
+  text-align: center;
+  margin: 5em 22em;
+  border-style: double;
+  border-radius: 2em;
+  border-color: #dc6900;
+}
+
+.town-header img {
+  padding: 3px 3px;
+}
+
+.town-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  row-gap: 50px;
+  column-gap: 200px;
+}

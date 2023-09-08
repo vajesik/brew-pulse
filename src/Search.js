@@ -159,7 +159,7 @@ function Search() {
                   </Accordion.Header>
                   <Accordion.Body>
                     {brewery.address_1}, {brewery.city}, {brewery.state}{" "}
-                    {brewery.postal_code}
+                    {brewery.postal_code}, {brewery.country}
                     <br />
                     <FontAwesomeIcon icon={faPhone} />
                     {brewery.phone

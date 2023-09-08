@@ -24,6 +24,7 @@
   align-content: center;
   row-gap: 25px;
   column-gap: 200px;
+  margin-bottom: 10%;
 }
 
 .card .featured-town-image {

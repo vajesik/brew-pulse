@@ -91,7 +91,9 @@ function Search() {
               placeholder="Enter 5 digit ZIP Code"
             />
           </Form.Group>
-          <Button type="submit">Search</Button>
+          <div style={{ textAlign: "center" }}>
+            <Button type="submit">Search</Button>
+          </div>
         </Form>
       </div>
       <div id="accordion-div">
@@ -100,8 +102,11 @@ function Search() {
             ? breweries.map((brewery, index) => (
                 <Accordion.Item key={brewery.id} eventKey={index.toString()}>
                   <Accordion.Header>
-                    {brewery.name} <br />
-                    Type: {brewery.brewery_type}
+                    <p>
+                      <br />
+                      <strong>{brewery.name}</strong> <br />
+                      Type: {brewery.brewery_type}
+                    </p>
                   </Accordion.Header>
                   <Accordion.Body>
                     {brewery.address_1}, {brewery.city}, {brewery.state}{" "}

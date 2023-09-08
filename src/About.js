@@ -25,7 +25,7 @@ function About() {
       name: "Vanessa Jesik",
       imageUrl: "vajesik.jpg",
       description:
-        "I am privileged to intimately know the mountains surrounding my home in Estes Park, Colorado. I have challenged my fortitude, expanded my comfort zone, and forged unbreakable bonds in neighboring Rocky Mountain National Park. My husband and I also have the honor of spending a portion of every winter in the town of Ouray, Colorado.  He has been ice climbing with their small community since he was 11 years old.  Early in our courtship, we lived a full winter in nearby Ridgway and spent the short days ice climbing and backcountry skiing off Red Mountain Pass.  We are fortunate the community welcomes us back each year. The growth I experienced exploring the mountains these last dozen-plus years has solidified in me the certainty that I am capable of seemingly impossible things if I simply determine myself to be. Please enjoy one of my early projects in my new adventure becoming a software engineer - Brew Pulse! - just as I, after many a long, fatiguing day climbing or skiing in the mountains, have enjoyed an ice-cold beer brewed and poured to perfection by the breweries featured here.",
+        "Please enjoy one of my early projects in my new adventure becoming a software engineer - Brew Pulse! - just as I, after many a long, fatiguing day climbing or skiing in the mountains, have enjoyed an ice-cold beer brewed and poured to perfection by the breweries featured here.\n\nI am privileged to intimately know the mountains surrounding my home in Estes Park, Colorado. I have challenged my fortitude, expanded my comfort zone, and forged unbreakable bonds in the craggy landscape of Rocky Mountain National Park. My husband and I also have the honor of spending a portion of every winter in the town of Ouray, Colorado.  He has been ice climbing with their frozen waterfalls since he was 11 years old.  Early in our courtship, we lived a full winter in nearby Ridgway and spent the short days ice climbing and backcountry skiing off Red Mountain Pass.  We are fortunate the community welcomes us back each year. The growth I experienced exploring the mountains these last dozen-plus years has solidified in me the certainty that I am capable of seemingly impossible things if I simply determine myself to be.",
       buttonLink: "#",
       githubLink: "https://github.com/vanessa-jesik",
       linkedinLink: "https://linkedin.com/in/vanessa-jesik",
@@ -87,7 +87,9 @@ function About() {
             <Card.Title style={{ fontWeight: 700, fontSize: "1.5em" }}>
               {card.name}
             </Card.Title>
-            <Card.Text>{card.description}</Card.Text>
+            <Card.Text style={{ whiteSpace: "pre-line" }}>
+              {card.description}
+            </Card.Text>
 
             <Button
               style={{

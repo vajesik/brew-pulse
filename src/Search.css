@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2em;
 }
 
 .search-header {
@@ -19,10 +20,12 @@
 }
 
 .form-label {
+  display: block;
+  text-align: center !important;
   color: #602320 !important;
   font-size: 18px;
   font-weight: bold !important;
-  margin: 8px 24px !important;
+  margin: 8px 18px !important;
 }
 
 .btn {
@@ -49,4 +52,8 @@
 .accordion {
   --bs-accordion-active-bg: #eb8c00 !important;
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #dc6900 !important;
+}
+
+.accordion-button {
+  height: 4em;
 }

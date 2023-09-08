@@ -37,6 +37,9 @@ function NavbarNav() {
             <NavDropdown.Item>OURAY/RIDGWAY, CO</NavDropdown.Item>
           </LinkContainer>
         </NavDropdown>
+        <LinkContainer to="/review">
+          <Nav.Link className="mr-3">REVIEWS</Nav.Link>
+        </LinkContainer>
         <LinkContainer to="/search">
           <Nav.Link className="mr-3">FIND BREWERIES NEAR YOU</Nav.Link>
         </LinkContainer>

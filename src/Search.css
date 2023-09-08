@@ -28,6 +28,11 @@
   margin: 8px 18px !important;
 }
 
+.form-control:focus {
+  border-color: #a32020 !important;
+  box-shadow: 0 0 0 0.25rem rgba(163, 32, 32, 0.4) !important;
+}
+
 .btn {
   border-radius: 2em !important;
   background-color: #602320 !important;
@@ -50,8 +55,8 @@
 }
 
 .accordion {
-  --bs-accordion-active-bg: #eb8c00 !important;
-  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #dc6900 !important;
+  --bs-accordion-active-bg: rgba(235, 140, 0, 0.9) !important;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(220, 105, 0, 0.9) !important;
 }
 
 .accordion-button {

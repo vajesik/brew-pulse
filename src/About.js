@@ -76,6 +76,7 @@ function About() {
               boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
             }}
             alt={card.name}
+            className="about-card-image"
           />
           <Card.Body>
             <Button href={card.githubLink} target="_blank" className="github">

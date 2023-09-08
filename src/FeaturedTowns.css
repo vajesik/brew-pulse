@@ -24,5 +24,18 @@
   align-content: center;
   row-gap: 25px;
   column-gap: 200px;
-  margin-bottom: 10%;
+}
+
+.card .featured-town-image {
+  width: 300px !important;
+  height: 275px !important;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.card .featured-town-image {
+  width: 300px !important;
+  height: 275px !important;
+  border-radius: 50%;
+  margin: 0 auto;
 }

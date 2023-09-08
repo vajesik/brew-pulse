@@ -59,6 +59,7 @@ function FeaturedTowns() {
               variant="top"
               src={townImages[town.image]}
               alt={(town.city, town.state)}
+              className="featured-town-image"
             />
             <Card.Body>
               <Card.Title>

@@ -23,6 +23,7 @@ function Review() {
   const [city, setCity] = useState([]);
   const [breweryReviews, setBreweryReviews] = useState([]);
   const [showAlert, setShowAlert] = useState(false);
+  const [selectedBreweryName, setSelectedBreweryName] = useState(""); // New state variable
 
   useEffect(() => {
     fetch("http://localhost:3000/breweries")
@@ -41,6 +42,8 @@ function Review() {
 
     if (name === "brewery") {
       fetchReviewsForBrewery(value);
+      const selectedBrewery = breweries.find((b) => b.id.toString() === value);
+      setSelectedBreweryName(selectedBrewery ? selectedBrewery.name : ""); // Set the brewery name
     }
   };
 
@@ -99,7 +102,9 @@ function Review() {
       <Row className="justify-content-md-center" style={{ paddingTop: "10px" }}>
         <Col md={6}>
           <Card className="review-card">
-            <Card.Header className="review-card-header">Submit a Review</Card.Header>
+            <Card.Header className="review-card-header">
+              Submit a Review
+            </Card.Header>
             <Card.Body>
               {showAlert && (
                 <Alert variant="success">Review saved successfully!</Alert>
@@ -148,6 +153,10 @@ function Review() {
                     ))}
                   </Form.Control>
                 </Form.Group>
+
+                {selectedBreweryName && (
+                  <p>Selected brewery: {selectedBreweryName}</p> // Display the selected brewery name
+                )}
 
                 <Form.Group controlId="formReview">
                   <Form.Label>Review</Form.Label>

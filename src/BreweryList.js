@@ -88,6 +88,13 @@ function BreweryList() {
             <Card.Text>
               {brewery.city}, {brewery.state} {brewery.zip}
             </Card.Text>
+            <Card.Text>
+              {brewery.phone.substring(0, 3) +
+                "-" +
+                brewery.phone.substring(3, 6) +
+                "-" +
+                brewery.phone.substring(6, 10)}
+            </Card.Text>
             <br />
             <br />
             {brewery.url ? (

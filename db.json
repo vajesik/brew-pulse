@@ -220,7 +220,7 @@
       "phone": "9705865421",
       "url": "http://www.epbrewery.net",
       "image": "taps.jpeg",
-      "likes": 0
+      "likes": 1
     },
     {
       "id": 13,
@@ -328,34 +328,21 @@
     },
     {
       "name": "Luna",
-      "breweryId": "2",
-      "review": "kjdn",
+      "breweryId": "12",
+      "review": "Beautiful scenery and these brews are delicious!",
       "id": 2
     },
     {
-      "name": "Luna",
-      "breweryId": "3",
-      "review": "Testing",
+      "name": "Faust",
+      "breweryId": "13",
+      "review": "Pretty mountains, tasty beer",
       "id": 3
     },
     {
-      "name": "Mushroom Ramen",
-      "breweryId": "8",
-      "breweryName": "Brother Ass Brewing",
-      "review": "slurp",
+      "name": "Simon",
+      "breweryId": "3",
+      "review": "This location is great! Love the selection. Also, ube ale? Genius.",
       "id": 4
-    },
-    {
-      "name": "Testing",
-      "breweryId": "1",
-      "review": "This is a review",
-      "id": 5
-    },
-    {
-      "name": "Rae Stanton",
-      "breweryId": "2",
-      "review": "Anotha",
-      "id": 6
     }
   ]
 }

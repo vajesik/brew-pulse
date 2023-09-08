@@ -1,12 +1,14 @@
 .town-header {
   text-align: center;
-  margin: 1em 22em;
   border-style: double;
   border-radius: 2em;
   border-color: #dc6900;
+  margin: 1% 24%;
 }
 
 .town-header img {
+  width: 120px;
+  height: 120px;
   padding: 3px 3px;
 }
 

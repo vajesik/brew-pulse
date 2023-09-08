@@ -27,18 +27,18 @@ function Review() {
 
   useEffect(() => {
     fetch("http://localhost:3000/breweries")
-      .then((response) => response.json())
-      .then((data) => {
+      .then(response => response.json())
+      .then(data => {
         setBreweries(data);
-        const uniqueCities = Array.from(new Set(data.map((b) => b.city)));
+        const uniqueCities = Array.from(new Set(data.map(b => b.city)));
         setCity(uniqueCities);
       })
-      .catch((error) => console.error("Error fetching breweries:", error));
+      .catch(error => console.error("Error fetching breweries:", error));
   }, []);
 
-  const handleInputChange = (event) => {
+  const handleInputChange = event => {
     const { name, value } = event.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    setFormData(prev => ({ ...prev, [name]: value }));
 
     if (name === "brewery") {
       fetchReviewsForBrewery(value);
@@ -47,7 +47,7 @@ function Review() {
     }
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = event => {
     event.preventDefault();
     setShowAlert(true);
     setTimeout(() => {
@@ -66,8 +66,8 @@ function Review() {
       },
       body: JSON.stringify(reviewData),
     })
-      .then((response) => response.json())
-      .then((data) => {
+      .then(response => response.json())
+      .then(data => {
         console.log("Review saved:", data);
         setFormData({
           name: "",
@@ -77,24 +77,24 @@ function Review() {
         });
         fetchReviewsForBrewery(formData.brewery);
       })
-      .catch((error) => {
+      .catch(error => {
         console.error("Error saving review:", error);
       });
   };
 
-  const fetchReviewsForBrewery = (breweryId) => {
+  const fetchReviewsForBrewery = breweryId => {
     fetch(`http://localhost:3000/reviews?breweryId=${breweryId}`)
-      .then((response) => response.json())
-      .then((data) => {
+      .then(response => response.json())
+      .then(data => {
         setBreweryReviews(data);
       })
-      .catch((error) => {
+      .catch(error => {
         console.error("Error fetching reviews:", error);
       });
   };
 
   const filteredBreweries = formData.city
-    ? breweries.filter((b) => b.city === formData.city)
+    ? breweries.filter(b => b.city === formData.city)
     : [];
 
   return (
@@ -124,7 +124,7 @@ function Review() {
 
                 <Form.Group controlId="formCitySelect">
                   <Form.Label>Select City</Form.Label>
-                  {city.map((city) => (
+                  {city.map(city => (
                     <Form.Check
                       type="radio"
                       key={city}
@@ -146,7 +146,7 @@ function Review() {
                     onChange={handleInputChange}
                   >
                     <option value="">Select a brewery...</option>
-                    {filteredBreweries.map((brewery) => (
+                    {filteredBreweries.map(brewery => (
                       <option key={brewery.id} value={brewery.id}>
                         {brewery.name}
                       </option>

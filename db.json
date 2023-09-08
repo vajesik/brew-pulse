@@ -327,12 +327,6 @@
       "id": 1
     },
     {
-      "name": "Luna",
-      "breweryId": "12",
-      "review": "Beautiful scenery and these brews are delicious!",
-      "id": 2
-    },
-    {
       "name": "Faust",
       "breweryId": "13",
       "review": "Pretty mountains, tasty beer",
@@ -343,6 +337,36 @@
       "breweryId": "3",
       "review": "This location is great! Love the selection. Also, ube ale? Genius.",
       "id": 4
+    },
+    {
+      "name": "Rocky Mountain Jim",
+      "breweryId": "11",
+      "review": "Craft brews and stunning views of Lumpy Ridge!  You can even have your pup on the patio!",
+      "id": 5
+    },
+    {
+      "name": "Isabella Bird",
+      "breweryId": "14",
+      "review": "Trivia on Tuesday nights with hilarious hosts and great beer!  They have biscuits for your furry friends too!",
+      "id": 6
+    },
+    {
+      "name": "Mr. Grumpy Pants",
+      "breweryId": "16",
+      "review": "My beer may be good but I'm too grumpy to welcome you in!  Oh fine, I'll pour you one so you can sit by the fire.",
+      "id": 7
+    },
+    {
+      "name": "Colorado Boys Everywhere",
+      "breweryId": "18",
+      "review": "You can't beat their beer and pizza after a long day climbing in the Ouray Ice Park!",
+      "id": 8
+    },
+    {
+      "name": "Hot Tubbers",
+      "breweryId": "17",
+      "review": "Enjoy their craft beers, exquisite cocktails, and delicious food after a soak in the hot springs!",
+      "id": 9
     }
   ]
 }

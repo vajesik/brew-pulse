@@ -1,15 +1,9 @@
-#form-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2em;
-}
-
 .search-header {
+  text-align: center;
   border-style: double;
   border-radius: 2em;
   border-color: #dc6900;
+  margin: 1% 28%;
 }
 
 .search-header img {
@@ -17,6 +11,14 @@
   height: 100px;
   margin: 0px 15px;
   padding: 3px 3px;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
 }
 
 .form-label {
@@ -31,6 +33,10 @@
 .form-control:focus {
   border-color: #a32020 !important;
   box-shadow: 0 0 0 0.25rem rgba(163, 32, 32, 0.4) !important;
+}
+
+::selection {
+  background-color: rgba(163, 32, 32, 0.3);
 }
 
 .btn {
@@ -50,7 +56,14 @@
   transform: scale(1.01) !important;
 }
 
-#accordion-div {
+#button-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion-div {
   margin: 0% 20%;
 }
 

@@ -28,7 +28,7 @@ function FeaturedTowns() {
   }, []);
 
   return (
-    <div>
+    <>
       <div className="town-header">
         <h1>
           <img
@@ -75,7 +75,7 @@ function FeaturedTowns() {
           </Card>
         ))}
       </div>
-    </div>
+    </>
   );
 }
 

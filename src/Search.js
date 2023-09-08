@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
 import Accordion from "react-bootstrap/Accordion";
 import "./Search.css";
 
@@ -24,6 +26,7 @@ function Search() {
     zip: "",
   });
   const { city, state, zip } = formData;
+  const [sortType, setSortType] = useState("name");
   const [breweries, setBreweries] = useState();
 
   function handleChange(event) {
@@ -44,22 +47,29 @@ function Search() {
       });
   }
 
+  const sortedBreweries =
+    sortType === "name"
+      ? breweries
+      : [...breweries].sort((a, b) =>
+          a.brewery_type.localeCompare(b.brewery_type)
+        );
+
   return (
-    <div>
-      <div id="form-div">
-        <div className="search-header">
-          <h2>
-            <img
-              src={iconImage["cheers_icon.jpeg"]}
-              alt="Graphic of two beer mugs clinking together"
-            />
-            SEARCH FOR BREWERIES:
-            <img
-              src={iconImage["cheers_icon.jpeg"]}
-              alt="Graphic of two beer mugs clinking together"
-            />
-          </h2>
-        </div>
+    <>
+      <div className="search-header">
+        <h2>
+          <img
+            src={iconImage["cheers_icon.jpeg"]}
+            alt="Graphic of two beer mugs clinking together"
+          />
+          SEARCH FOR BREWERIES:
+          <img
+            src={iconImage["cheers_icon.jpeg"]}
+            alt="Graphic of two beer mugs clinking together"
+          />
+        </h2>
+      </div>
+      <div className="form-div">
         <Form onSubmit={handleFormSubmit}>
           <Form.Group>
             <Form.Label>City</Form.Label>
@@ -91,15 +101,28 @@ function Search() {
               placeholder="Enter 5 digit ZIP Code"
             />
           </Form.Group>
-          <div style={{ textAlign: "center" }}>
+          <div id="button-div">
             <Button type="submit">Search</Button>
+            {breweries ? (
+              <DropdownButton
+                id="dropdown-basic-button"
+                title="Sort By"
+                onSelect={event => setSortType(event)}
+              >
+                {sortType === "type" ? (
+                  <Dropdown.Item eventKey="name">Brewery Name</Dropdown.Item>
+                ) : (
+                  <Dropdown.Item eventKey="type">Brewery Type</Dropdown.Item>
+                )}
+              </DropdownButton>
+            ) : null}
           </div>
         </Form>
       </div>
-      <div id="accordion-div">
+      <div className="accordion-div">
         <Accordion>
           {breweries
-            ? breweries.map((brewery, index) => (
+            ? sortedBreweries.map((brewery, index) => (
                 <Accordion.Item key={brewery.id} eventKey={index.toString()}>
                   <Accordion.Header>
                     <p>
@@ -121,7 +144,7 @@ function Search() {
             : null}
         </Accordion>
       </div>
-    </div>
+    </>
   );
 }
 

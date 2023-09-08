@@ -58,7 +58,7 @@ function Home() {
             // width: "45%",
           }}
           src={headerImage["brewpulselog.png"]}
-          alt="Graphic of a line of brews in a variety of glasses all with a nice head of foam"
+          alt="Graphic of Brew Pulse logo"
         />
         <div style={{ display: "flex", justifyContent: "center" }}>
           <Link to="/featured_towns">

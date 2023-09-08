@@ -328,34 +328,15 @@
     },
     {
       "name": "Luna",
-      "breweryId": "2",
-      "review": "kjdn",
+      "breweryId": "12",
+      "review": "The beautiful scenery and these brews are delicious!",
       "id": 2
     },
     {
-      "name": "Luna",
-      "breweryId": "3",
-      "review": "Testing",
+      "name": "Faust",
+      "breweryId": "13",
+      "review": "Pretty mountains, pretty beer",
       "id": 3
-    },
-    {
-      "name": "Mushroom Ramen",
-      "breweryId": "8",
-      "breweryName": "Brother Ass Brewing",
-      "review": "slurp",
-      "id": 4
-    },
-    {
-      "name": "Testing",
-      "breweryId": "1",
-      "review": "This is a review",
-      "id": 5
-    },
-    {
-      "name": "Rae Stanton",
-      "breweryId": "2",
-      "review": "Anotha",
-      "id": 6
     }
   ]
 }

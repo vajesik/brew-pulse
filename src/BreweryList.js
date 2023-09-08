@@ -22,7 +22,6 @@ const brewImages = importAll(
 
 function BreweryList() {
   const [breweries, setBreweries] = useState([]);
-  const [reviews, setReviews] = useState([]);
   const { city } = useParams();
 
   useEffect(() => {
@@ -31,21 +30,6 @@ function BreweryList() {
       .then((breweries) => setBreweries(breweries));
   }, []);
 
-  useEffect(() => {
-    if (breweries.length) {
-      fetch("http://localhost:3000/reviews")
-        .then((r) => r.json())
-        .then((fetchedReviews) => {
-          const reviewsWithBreweryNames = fetchedReviews.map((review) => {
-            const brewery = breweries.find(
-              (brewery) => brewery.id.toString() === review.breweryId.toString()
-            );
-            return { ...review, breweryName: brewery?.name };
-          });
-          setReviews(reviewsWithBreweryNames);
-        });
-    }
-  }, [breweries]);
 
   const breweriesToDisplay = breweries.filter(
     (brewery) => city === brewery.city
@@ -98,21 +82,6 @@ function BreweryList() {
           </Card.Body>
         </Card>
       ))}
-      {reviews.length > 0 && (
-        <Card className="review-card">
-          <Card.Header className="review-card-header">All Reviews</Card.Header>
-          <Card.Body>
-            <ul className="review-list">
-              {reviews.map((review) => (
-                <li key={review.id} className="review-item">
-                  <strong>{review.breweryName}</strong>: {review.review} -
-                  <em>Reviewed by: {review.name}</em>
-                </li>
-              ))}
-            </ul>
-          </Card.Body>
-        </Card>
-      )}
     </div>
   );
 }

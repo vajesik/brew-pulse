@@ -78,19 +78,18 @@ function Review() {
           brewery: "",
         });
 
-        // update the reviews state to include the new review
         setReviews((prevReviews) => [
           ...prevReviews,
           {
-            id: data.id, // assuming your server returns the new review id
+            id: data.id,
             breweryId: formData.brewery,
             name: formData.name,
             review: formData.review,
-            breweryName: selectedBreweryName, // we use the selectedBreweryName state to get the brewery name
+            breweryName: selectedBreweryName,
           },
         ]);
 
-        fetchReviewsForBrewery(formData.brewery); // This line may not be necessary anymore since we're updating the reviews state directly
+        fetchReviewsForBrewery(formData.brewery);
       })
 
       .catch((error) => {

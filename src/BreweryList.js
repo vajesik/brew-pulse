@@ -27,18 +27,18 @@ function BreweryList() {
 
   useEffect(() => {
     fetch("http://localhost:3000/breweries")
-      .then((r) => r.json())
-      .then((breweries) => setBreweries(breweries));
+      .then(r => r.json())
+      .then(breweries => setBreweries(breweries));
   }, []);
 
   useEffect(() => {
     if (breweries.length) {
       fetch("http://localhost:3000/reviews")
-        .then((r) => r.json())
-        .then((fetchedReviews) => {
-          const reviewsWithBreweryNames = fetchedReviews.map((review) => {
+        .then(r => r.json())
+        .then(fetchedReviews => {
+          const reviewsWithBreweryNames = fetchedReviews.map(review => {
             const brewery = breweries.find(
-              (brewery) => brewery.id.toString() === review.breweryId.toString()
+              brewery => brewery.id.toString() === review.breweryId.toString()
             );
             return { ...review, breweryName: brewery?.name };
           });
@@ -47,12 +47,10 @@ function BreweryList() {
     }
   }, [breweries]);
 
-  const breweriesToDisplay = breweries.filter(
-    (brewery) => city === brewery.city
-  );
+  const breweriesToDisplay = breweries.filter(brewery => city === brewery.city);
 
   function handleLike(breweryId) {
-    const updatedBreweries = breweries.map((brew) => {
+    const updatedBreweries = breweries.map(brew => {
       if (brew.id.toString() === breweryId.toString()) {
         return { ...brew, likes: brew.likes + 1 };
       }
@@ -64,14 +62,16 @@ function BreweryList() {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        likes: updatedBreweries.find((b) => b.id.toString() === breweryId.toString()).likes,
+        likes: updatedBreweries.find(
+          b => b.id.toString() === breweryId.toString()
+        ).likes,
       }),
     });
   }
 
   return (
     <div className="brew-cards">
-      {breweriesToDisplay.map((brewery) => (
+      {breweriesToDisplay.map(brewery => (
         <Card className="card-item" key={brewery.id}>
           <Card.Img
             variant="top"
@@ -91,7 +91,11 @@ function BreweryList() {
             <br />
             <br />
             {brewery.url ? (
-              <Button href={brewery.url} className="website-button">
+              <Button
+                href={brewery.url}
+                target="_blank"
+                className="website-button"
+              >
                 <FontAwesomeIcon icon={faLink} />
               </Button>
             ) : null}
@@ -103,7 +107,7 @@ function BreweryList() {
           <Card.Header className="review-card-header">All Reviews</Card.Header>
           <Card.Body>
             <ul className="review-list">
-              {reviews.map((review) => (
+              {reviews.map(review => (
                 <li key={review.id} className="review-item">
                   <strong>{review.breweryName}</strong>: {review.review} -
                   <em>Reviewed by: {review.name}</em>

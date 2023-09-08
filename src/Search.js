@@ -3,7 +3,10 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
+import Modal from "react-bootstrap/Modal";
 import Accordion from "react-bootstrap/Accordion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./Search.css";
 
 //Icon image import
@@ -28,6 +31,7 @@ function Search() {
   const { city, state, zip } = formData;
   const [sortType, setSortType] = useState("name");
   const [breweries, setBreweries] = useState();
+  const [showModal, setShowModal] = useState(false);
 
   function handleChange(event) {
     setFormData(formData => {
@@ -42,9 +46,15 @@ function Search() {
     )
       .then(response => response.json())
       .then(data => {
-        setBreweries(data);
-        setFormData({ city: "", state: "", zip: "" });
-      });
+        if (data.length < 1) {
+          setBreweries();
+          setShowModal(true);
+        } else {
+          setBreweries(data);
+          setFormData({ city: "", state: "", zip: "" });
+        }
+      })
+      .catch(error => alert("Error fetching breweries"));
   }
 
   const sortedBreweries =
@@ -119,6 +129,22 @@ function Search() {
           </div>
         </Form>
       </div>
+      <Modal show={showModal}>
+        <Modal.Body>
+          <p>
+            <strong>No breweries returned for:</strong>
+            <br />
+            City: {city}
+            <br />
+            State: {state}
+            <br />
+            ZIP Code: {zip}
+          </p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={event => setShowModal(false)}>Close</Button>
+        </Modal.Footer>
+      </Modal>
       <div className="accordion-div">
         <Accordion>
           {breweries
@@ -135,8 +161,18 @@ function Search() {
                     {brewery.address_1}, {brewery.city}, {brewery.state}{" "}
                     {brewery.postal_code}
                     <br />
+                    <FontAwesomeIcon icon={faPhone} />
+                    {" " +
+                      brewery.phone.substring(0, 3) +
+                      "-" +
+                      brewery.phone.substring(3, 6) +
+                      "-" +
+                      brewery.phone.substring(6, 10)}{" "}
+                    <br />
                     {brewery.website_url ? (
-                      <Button href={brewery.website_url}>Website</Button>
+                      <Button href={brewery.website_url} target="_blank">
+                        Website
+                      </Button>
                     ) : null}
                   </Accordion.Body>
                 </Accordion.Item>

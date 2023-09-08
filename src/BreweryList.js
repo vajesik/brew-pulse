@@ -4,7 +4,11 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./BreweryList.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBeerMugEmpty, faLink } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBeerMugEmpty,
+  faLink,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 //Image imports
 function importAll(r) {
@@ -26,17 +30,14 @@ function BreweryList() {
 
   useEffect(() => {
     fetch("http://localhost:3000/breweries")
-      .then((r) => r.json())
-      .then((breweries) => setBreweries(breweries));
+      .then(r => r.json())
+      .then(breweries => setBreweries(breweries));
   }, []);
 
-
-  const breweriesToDisplay = breweries.filter(
-    (brewery) => city === brewery.city
-  );
+  const breweriesToDisplay = breweries.filter(brewery => city === brewery.city);
 
   function handleLike(breweryId) {
-    const updatedBreweries = breweries.map((brew) => {
+    const updatedBreweries = breweries.map(brew => {
       if (brew.id.toString() === breweryId.toString()) {
         return { ...brew, likes: brew.likes + 1 };
       }
@@ -48,14 +49,16 @@ function BreweryList() {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        likes: updatedBreweries.find((b) => b.id.toString() === breweryId.toString()).likes,
+        likes: updatedBreweries.find(
+          b => b.id.toString() === breweryId.toString()
+        ).likes,
       }),
     });
   }
 
   return (
     <div className="brew-cards">
-      {breweriesToDisplay.map((brewery) => (
+      {breweriesToDisplay.map(brewery => (
         <Card className="card-item" key={brewery.id}>
           <Card.Img
             variant="top"
@@ -72,10 +75,23 @@ function BreweryList() {
             <Card.Text>
               {brewery.city}, {brewery.state} {brewery.zip}
             </Card.Text>
+            <Card.Text>
+              <FontAwesomeIcon icon={faPhone} />
+              {" " +
+                brewery.phone.substring(0, 3) +
+                "-" +
+                brewery.phone.substring(3, 6) +
+                "-" +
+                brewery.phone.substring(6, 10)}
+            </Card.Text>
             <br />
             <br />
             {brewery.url ? (
-              <Button href={brewery.url} className="website-button">
+              <Button
+                href={brewery.url}
+                target="_blank"
+                className="website-button"
+              >
                 <FontAwesomeIcon icon={faLink} />
               </Button>
             ) : null}

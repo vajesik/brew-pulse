@@ -329,13 +329,13 @@
     {
       "name": "Luna",
       "breweryId": "12",
-      "review": "The beautiful scenery and these brews are delicious!",
+      "review": "Beautiful scenery and these brews are delicious!",
       "id": 2
     },
     {
       "name": "Faust",
       "breweryId": "13",
-      "review": "Pretty mountains, pretty beer",
+      "review": "Pretty mountains, tasty beer",
       "id": 3
     },
     {

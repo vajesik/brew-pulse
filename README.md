@@ -6,11 +6,13 @@ This project was our second group project for Flatiron School. We landed on usin
 ### Vanessa Jesik
 
 [GitHub](https://github.com/vanessa-jesik)
+
 [LinkedIn](https://linkedin.com/in/vanessa-jesik)
 
 ### Rae Stanton
 
 [Github](https://github.com/rae-stanton)
+
 [LinkedIn](https://linkedin.com/in/rae-stanton)
 
 ## Acknowledgements

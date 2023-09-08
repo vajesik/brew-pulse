@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,6 +21,7 @@ const aboutImages = importAll(
 );
 
 function About() {
+  const navigate = useNavigate();
   const cardDetails = [
     {
       name: "Vanessa Jesik",
@@ -27,7 +29,7 @@ function About() {
       description:
         "Please enjoy one of my early projects created during my new adventure of becoming a software engineer - Brew Pulse! - just as I, after many a long, fatiguing day climbing or skiing in the mountains, have enjoyed an ice-cold beer brewed and poured to perfection by the breweries featured here.\n\nI am privileged to intimately know the mountains surrounding my home in Estes Park, Colorado. I have challenged my fortitude, expanded my comfort zone, and forged unbreakable bonds in the craggy landscape of Rocky Mountain National Park. My husband and I also have the honor of spending a portion of every winter in the town of Ouray, Colorado.  He has been ice climbing with their frozen waterfalls since he was 11 years old.  Early in our courtship, we lived a full winter in nearby Ridgway and spent the short days ice climbing and backcountry skiing off Red Mountain Pass.  We are fortunate the community welcomes us back each year. The growth I experienced exploring the mountains these last dozen-plus years has solidified in me the certainty that I am capable of seemingly impossible things if I simply determine myself to be.",
       buttonText: "Check out my local\nwatering holes!",
-      buttonLink: "#",
+      buttonLink: "/featured_towns/Estes Park",
       githubLink: "https://github.com/vanessa-jesik",
       linkedinLink: "https://linkedin.com/in/vanessa-jesik",
     },
@@ -100,7 +102,7 @@ function About() {
                 padding: "0.5em 1.5em",
                 whiteSpace: "pre-line",
               }}
-              href={card.buttonLink}
+              onClick={() => navigate(`${card.buttonLink}`)}
             >
               {card.buttonText}
             </Button>

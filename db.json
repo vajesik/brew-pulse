@@ -208,7 +208,7 @@
       "phone": "9705912700",
       "url": "https://avantgardealeworks.com",
       "image": "tablecheers.jpeg",
-      "likes": 6
+      "likes": 7
     },
     {
       "id": 12,
@@ -240,7 +240,7 @@
       "phone": "9702351752",
       "url": "http://www.lumpyridgebrewing.com",
       "image": "taster.jpeg",
-      "likes": 4
+      "likes": 5
     },
     {
       "id": 14,
@@ -377,6 +377,12 @@
       "breweryId": "3",
       "review": "The blueberry muffin sour is so delicious! Alberta is also a fun place to wander on the weekends.",
       "id": 10
+    },
+    {
+      "name": "Morgan",
+      "breweryId": "8",
+      "review": "Best Beers Ever!",
+      "id": 11
     }
   ]
 }

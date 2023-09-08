@@ -40,6 +40,7 @@ function Search() {
   }
 
   function handleFormSubmit(event) {
+    setSortType("name");
     event.preventDefault();
     fetch(
       `https://api.openbrewerydb.org/v1/breweries?by_city=${city}&by_state=${state}&by_postal=${zip}`

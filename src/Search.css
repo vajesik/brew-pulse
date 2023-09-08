@@ -35,6 +35,10 @@
   box-shadow: 0 0 0 0.25rem rgba(163, 32, 32, 0.4) !important;
 }
 
+::selection {
+  background-color: rgba(163, 32, 32, 0.3);
+}
+
 .btn {
   border-radius: 2em !important;
   background-color: #602320 !important;
@@ -50,6 +54,13 @@
   color: #ffffff !important;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
   transform: scale(1.01) !important;
+}
+
+#button-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .accordion-div {

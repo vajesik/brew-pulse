@@ -101,23 +101,23 @@ function Search() {
               placeholder="Enter 5 digit ZIP Code"
             />
           </Form.Group>
-          <div style={{ textAlign: "center" }}>
+          <div id="button-div">
             <Button type="submit">Search</Button>
+            {breweries ? (
+              <DropdownButton
+                id="dropdown-basic-button"
+                title="Sort By"
+                onSelect={event => setSortType(event)}
+              >
+                {sortType === "type" ? (
+                  <Dropdown.Item eventKey="name">Brewery Name</Dropdown.Item>
+                ) : (
+                  <Dropdown.Item eventKey="type">Brewery Type</Dropdown.Item>
+                )}
+              </DropdownButton>
+            ) : null}
           </div>
         </Form>
-      </div>
-      <div className="sort-div">
-        <DropdownButton
-          id="dropdown-basic-button"
-          title="Sort By"
-          onSelect={event => setSortType(event)}
-        >
-          {sortType === "type" ? (
-            <Dropdown.Item eventKey="name">Brewery Name</Dropdown.Item>
-          ) : (
-            <Dropdown.Item eventKey="type">Brewery Type</Dropdown.Item>
-          )}
-        </DropdownButton>
       </div>
       <div className="accordion-div">
         <Accordion>

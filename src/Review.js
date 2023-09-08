@@ -25,6 +25,7 @@ function Review() {
   const [reviews, setReviews] = useState([]);
   const [showAlert, setShowAlert] = useState(false);
   const [selectedBreweryName, setSelectedBreweryName] = useState("");
+  const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
     fetch("http://localhost:3000/breweries")
@@ -140,71 +141,78 @@ function Review() {
               <Card.Header className="review-card-header">
                 Submit a Review
               </Card.Header>
+              <Button
+                onClick={() => setShowForm((prev) => !prev)}
+                style={{ float: "right" }}
+              >
+                {showForm ? "Hide" : "Show"} Form
+              </Button>
               <Card.Body>
                 {showAlert && (
                   <Alert variant="success">Review saved successfully!</Alert>
                 )}
-
-                <Form onSubmit={handleSubmit}>
-                  <Form.Group controlId="formName">
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      placeholder="Enter your name"
-                    />
-                  </Form.Group>
-
-                  <Form.Group controlId="formCitySelect">
-                    <Form.Label>Select City</Form.Label>
-                    {city.map((city) => (
-                      <Form.Check
-                        type="radio"
-                        key={city}
-                        label={city}
-                        name="city"
-                        value={city}
-                        checked={formData.city === city}
+                {showForm && (
+                  <Form onSubmit={handleSubmit}>
+                    <Form.Group controlId="formName">
+                      <Form.Label>Name</Form.Label>
+                      <Form.Control
+                        type="text"
+                        name="name"
+                        value={formData.name}
                         onChange={handleInputChange}
+                        placeholder="Enter your name"
                       />
-                    ))}
-                  </Form.Group>
+                    </Form.Group>
 
-                  <Form.Group controlId="formBrewery">
-                    <Form.Label>Select Brewery</Form.Label>
-                    <Form.Control
-                      as="select"
-                      name="brewery"
-                      value={formData.brewery}
-                      onChange={handleInputChange}
-                    >
-                      <option value="">Select a brewery...</option>
-                      {filteredBreweries.map((brewery) => (
-                        <option key={brewery.id} value={brewery.id}>
-                          {brewery.name}
-                        </option>
+                    <Form.Group controlId="formCitySelect">
+                      <Form.Label>Select City</Form.Label>
+                      {city.map((city) => (
+                        <Form.Check
+                          type="radio"
+                          key={city}
+                          label={city}
+                          name="city"
+                          value={city}
+                          checked={formData.city === city}
+                          onChange={handleInputChange}
+                        />
                       ))}
-                    </Form.Control>
-                  </Form.Group>
+                    </Form.Group>
 
-                  <Form.Group controlId="formReview">
-                    <Form.Label>Review</Form.Label>
-                    <Form.Control
-                      as="textarea"
-                      rows={3}
-                      name="review"
-                      value={formData.review}
-                      onChange={handleInputChange}
-                      placeholder="Enter your review"
-                    />
-                  </Form.Group>
-                  <br />
-                  <Button variant="primary" type="submit">
-                    Submit
-                  </Button>
-                </Form>
+                    <Form.Group controlId="formBrewery">
+                      <Form.Label>Select Brewery</Form.Label>
+                      <Form.Control
+                        as="select"
+                        name="brewery"
+                        value={formData.brewery}
+                        onChange={handleInputChange}
+                      >
+                        <option value="">Select a brewery...</option>
+                        {filteredBreweries.map((brewery) => (
+                          <option key={brewery.id} value={brewery.id}>
+                            {brewery.name}
+                          </option>
+                        ))}
+                      </Form.Control>
+                    </Form.Group>
+
+                    <Form.Group controlId="formReview">
+                      <Form.Label>Review</Form.Label>
+                      <Form.Control
+                        as="textarea"
+                        rows={3}
+                        name="review"
+                        value={formData.review}
+                        onChange={handleInputChange}
+                        placeholder="Enter your review"
+                      />
+                    </Form.Group>
+                    <br />
+                    <Button variant="primary" type="submit">
+                      Submit
+                    </Button>
+                  </Form>
+                )}
               </Card.Body>
             </Card>
           </Col>

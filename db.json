@@ -329,14 +329,20 @@
     {
       "name": "Luna",
       "breweryId": "12",
-      "review": "The beautiful scenery and these brews are delicious!",
+      "review": "Beautiful scenery and these brews are delicious!",
       "id": 2
     },
     {
       "name": "Faust",
       "breweryId": "13",
-      "review": "Pretty mountains, pretty beer",
+      "review": "Pretty mountains, tasty beer",
       "id": 3
+    },
+    {
+      "name": "Simon",
+      "breweryId": "3",
+      "review": "This location is great! Love the selection. Also, ube ale? Genius.",
+      "id": 4
     }
   ]
 }

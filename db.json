@@ -371,6 +371,12 @@
       "breweryId": "17",
       "review": "Enjoy their craft beers, exquisite cocktails, and delicious food after a soak in the hot springs!",
       "id": 9
+    },
+    {
+      "name": "Luna",
+      "breweryId": "3",
+      "review": "The blueberry muffin sour is so delicious! Alberta is also a fun place to wander on the weekends.",
+      "id": 10
     }
   ]
 }

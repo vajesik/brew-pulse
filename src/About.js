@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./About.css";
+import { Link } from "react-router-dom"
 
 //Image imports
 function importAll(r) {
@@ -38,8 +39,9 @@ function About() {
       imageUrl: "headshotrrae.png",
       description:
         "I started off living in Tampa, Florida, and spent the vast majority of my life there. In late 2022, though, we packed up and moved to the beautiful PNW. Portland and Vancouver are both wonderful cities, and I love exploring the local restaurants(food carts included!), some excellent local beer (Cascade's sours are so good) and cider (huge shoutout to Schilling, their mule cider is 10/10) and nature. I also switched into learning software development at the same time we moved, starting in Ruby on Rails and now learning other languages and enjoying the process. I joke that I'm a human trill, having been a music teacher, baker, hairstylist, and now this! When I'm not hacking away, I absolutely love playing video games, throwing down in the kitchen with my husband, cuddling with my two cats, and watching a ton of sci-fi shows. Anyway, I hope you enjoy our project, Brew Pulse, created in our second phase of Flatiron School. Also, check out some of my local brews below! You may find one to travel to if you find yourself in the PNW one day.",
-      buttonText: "Learn More",
-      buttonLink: "#",
+
+      buttonText: "Check my Local Brews",
+      buttonLink: "/featured_towns/Vancouver",
       githubLink: "https://github.com/rae-stanton",
       linkedinLink: "https://linkedin.com/in/rae-stanton",
     },
@@ -105,6 +107,7 @@ function About() {
               onClick={() => navigate(`${card.buttonLink}`)}
             >
               {card.buttonText}
+
             </Button>
           </Card.Body>
         </Card>

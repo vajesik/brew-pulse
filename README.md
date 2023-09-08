@@ -18,3 +18,4 @@ This project was our second group project for Flatiron School. We landed on usin
 - [Open Brewery DB API](https://openbrewerydb.org/) for the free open DB
 - [React Bootstrap](https://react-bootstrap.github.io/) for UI components
 - [FontAwesome](https://fontawesome.com) for specialized icons
+- [Browser Icon](https://www.flaticon.com/free-icon/beer_931949?term=beer+mug&page=1&position=3&origin=search&related_id=931949) Our tab icon

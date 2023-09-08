@@ -204,7 +204,7 @@
       "phone": "9705912700",
       "url": "https://avantgardealeworks.com",
       "image": "tablecheers.jpeg",
-      "likes": 1
+      "likes": 6
     },
     {
       "id": 12,
@@ -236,7 +236,7 @@
       "phone": "9702351752",
       "url": "http://www.lumpyridgebrewing.com",
       "image": "taster.jpeg",
-      "likes": 2
+      "likes": 4
     },
     {
       "id": 14,
@@ -252,7 +252,7 @@
       "phone": "9705867300",
       "url": "http://www.rockcutbrewing.com",
       "image": "flight.jpeg",
-      "likes": 4
+      "likes": 8
     },
     {
       "id": 15,
@@ -268,7 +268,7 @@
       "phone": "9703257388",
       "url": "http://www.ouraybrewery.com",
       "image": "closepour.jpeg",
-      "likes": 0
+      "likes": 1
     },
     {
       "id": 16,
@@ -284,7 +284,7 @@
       "phone": "9709031824",
       "url": null,
       "image": "cheers.jpeg",
-      "likes": 0
+      "likes": 4
     },
     {
       "id": 17,
@@ -300,7 +300,7 @@
       "phone": "9703259858",
       "url": "http://www.redmountainbrewingouray.com",
       "image": "grains.jpeg",
-      "likes": 0
+      "likes": 5
     },
     {
       "id": 18,
@@ -316,7 +316,7 @@
       "phone": "9706265333",
       "url": "http://www.coloradoboy.com",
       "image": "blur.jpeg",
-      "likes": 0
+      "likes": 7
     }
   ],
   "reviews": [

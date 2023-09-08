@@ -30,3 +30,8 @@
   border-color: #a32020 !important;
   box-shadow: 0 0 0 0.25rem rgba(163, 32, 32, 0.25) !important;
 }
+
+.review-card-reviews {
+  box-shadow: "4px 8px 10px rgba(0, 0, 0, 0.1)";
+}
+

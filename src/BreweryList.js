@@ -4,7 +4,11 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./BreweryList.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBeerMugEmpty, faLink } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBeerMugEmpty,
+  faLink,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 //Image imports
 function importAll(r) {
@@ -89,7 +93,9 @@ function BreweryList() {
               {brewery.city}, {brewery.state} {brewery.zip}
             </Card.Text>
             <Card.Text>
-              {brewery.phone.substring(0, 3) +
+              <FontAwesomeIcon icon={faPhone} />
+              {" " +
+                brewery.phone.substring(0, 3) +
                 "-" +
                 brewery.phone.substring(3, 6) +
                 "-" +

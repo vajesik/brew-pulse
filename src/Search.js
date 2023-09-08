@@ -5,6 +5,8 @@ import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Modal from "react-bootstrap/Modal";
 import Accordion from "react-bootstrap/Accordion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./Search.css";
 
 //Icon image import
@@ -158,6 +160,14 @@ function Search() {
                   <Accordion.Body>
                     {brewery.address_1}, {brewery.city}, {brewery.state}{" "}
                     {brewery.postal_code}
+                    <br />
+                    <FontAwesomeIcon icon={faPhone} />
+                    {" " +
+                      brewery.phone.substring(0, 3) +
+                      "-" +
+                      brewery.phone.substring(3, 6) +
+                      "-" +
+                      brewery.phone.substring(6, 10)}{" "}
                     <br />
                     {brewery.website_url ? (
                       <Button href={brewery.website_url} target="_blank">

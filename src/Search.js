@@ -162,12 +162,14 @@ function Search() {
                     {brewery.postal_code}
                     <br />
                     <FontAwesomeIcon icon={faPhone} />
-                    {" " +
-                      brewery.phone.substring(0, 3) +
-                      "-" +
-                      brewery.phone.substring(3, 6) +
-                      "-" +
-                      brewery.phone.substring(6, 10)}{" "}
+                    {brewery.phone
+                      ? " " +
+                        brewery.phone.substring(0, 3) +
+                        "-" +
+                        brewery.phone.substring(3, 6) +
+                        "-" +
+                        brewery.phone.substring(6, 10)
+                      : null}
                     <br />
                     {brewery.website_url ? (
                       <Button href={brewery.website_url} target="_blank">

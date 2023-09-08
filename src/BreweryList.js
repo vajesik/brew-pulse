@@ -77,12 +77,14 @@ function BreweryList() {
             </Card.Text>
             <Card.Text>
               <FontAwesomeIcon icon={faPhone} />
-              {" " +
-                brewery.phone.substring(0, 3) +
-                "-" +
-                brewery.phone.substring(3, 6) +
-                "-" +
-                brewery.phone.substring(6, 10)}
+              {brewery.phone
+                ? " " +
+                  brewery.phone.substring(0, 3) +
+                  "-" +
+                  brewery.phone.substring(3, 6) +
+                  "-" +
+                  brewery.phone.substring(6, 10)
+                : null}
             </Card.Text>
             <br />
             <br />
